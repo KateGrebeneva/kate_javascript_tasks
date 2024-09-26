@@ -1,0 +1,29 @@
+body {
+    background-color: #f4b942f6; 
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 600px; 
+    margin: auto; 
+    padding: 20px;
+    background-color: #f7e7a3f5; 
+    border: 5px solid #c6941f; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
+}
+
+h2 {
+    color: #cc9406;
+    text-align: center; 
+    font-size: 24px; 
+    margin-bottom: 20px; 
+}
+
+p {
+    color: #c38200; 
+    line-height: 1.6; 
+    margin: auto; 
+}
