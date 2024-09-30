@@ -240,12 +240,12 @@ alert(sum49_2);
 
 // Задание 51 №18
 // let test = Boolean('NaN');
-alert(test);
+// alert(test);
 // Результат выведния будет = true
 
 // Задание 51 №19
 // let test = Boolean(3 * 'abc');
-alert(test);
+// alert(test);
 // Результат выведния будет = false
 
 // Задание 51 №20
@@ -260,17 +260,17 @@ alert(test);
 
 // Задание 52 №1
 let str52_1 = 'abcde';
-alert(str[0]); 
-alert(str[2]); 
-alert(str[4]); 
+alert(str52_1[0]); 
+alert(str52_1[2]); 
+alert(str52_1[4]); 
 
 // Задание 52 №2
 let str52_2 = 'abcde';
-alert(str[4]); 
-alert(str[3]); 
-alert(str[2]); 
-alert(str[1]); 
-alert(str[0]);
+alert(str52_2[4]); 
+alert(str52_2[3]); 
+alert(str52_2[2]); 
+alert(str52_2[1]); 
+alert(str52_2[0]);
 
 // Задание 52 №3
 let str52_3 = 'abcde';
