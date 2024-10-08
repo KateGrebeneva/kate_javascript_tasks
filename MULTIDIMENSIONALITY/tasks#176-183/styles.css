@@ -1,5 +1,5 @@
 body {
-    background-color: #c494cc; 
+    background-color: #be866a; 
     font-family: 'Arial', sans-serif; 
     margin: 0;
     padding: 20px;
@@ -9,22 +9,23 @@ body {
     width: 600px; 
     margin: auto; 
     padding: 20px;
-    background-color: #d1c4e9; 
-    border: 5px solid #6a1b9a; 
+    background-color: #f4c7b4; 
+    border: 5px solid #a0522d; 
     border-radius: 10px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); 
 }
 
 h2 {
-    color: #4a148c; 
+    color: #4e3b31; 
     text-align: center; 
     font-size: 24px; 
     margin-bottom: 20px; 
 }
 
 p {
-    color: #7b1fa2;
+    color: #5b3a29;
     line-height: 1.6; 
     margin: auto; 
 }
+
 
