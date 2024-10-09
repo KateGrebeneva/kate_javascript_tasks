@@ -54,3 +54,15 @@ console.log('Результат задания 188 №1:');
 let a = -500;
 let b = 25;
 console.log (Math.abs(a-b));
+
+// Задание 189 №1
+console.log('Результат задания 189 №1:');
+let str189_1 = 'js';
+str189_1 = str189_1.toUpperCase();
+console.log(str189_1);
+
+// Задание 189 №2
+console.log('Результат задания 189 №2:');
+let str189_2 = 'JS';
+str189_2 = str189_2.toLowerCase();
+console.log(str189_2);
