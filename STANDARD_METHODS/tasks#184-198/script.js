@@ -66,3 +66,21 @@ console.log('Результат задания 189 №2:');
 let str189_2 = 'JS';
 str189_2 = str189_2.toLowerCase();
 console.log(str189_2);
+
+// Задание 190 №1
+console.log('Результат задания 190 №1:');
+let str = 'я учу javascript';
+let word190_1 = str.substr(2, 3); 
+let word190_2 = str.substr(6, 10);
+console.log('Метод substr: ' + (word190_1));
+console.log('Метод substr: ' + (word190_2));
+
+word190_1 = str.substring(2, 5);
+word190_2 = str.substring(6, 16);
+console.log('Метод substring: ' + (word190_1));
+console.log('Метод substring: ' + (word190_2));
+
+word190_1 = str.slice(2, 5); 
+word190_2 = str.slice(6, 16);
+console.log('Метод subslice: ' + (word190_1));
+console.log('Метод subslice: ' + (word190_2));
