@@ -158,3 +158,23 @@ console.log('Результат задания 195 №2:');
 let arr195_2 = [1, 2, 3, 4, 5];
 let sub195_2 = arr195_2.slice(3);
 console.log(sub195_2);
+
+// Задание 196 №1
+console.log('Результат задания 196 №1:');
+let arr196_1 = [1, 2, 3, 4, 5];
+arr196_1.splice(1, 2);
+console.log(arr196_1);
+
+// Задание 196 №2
+console.log('Результат задания 196 №2:');
+let arr196_2 = [1, 2, 3, 4, 5];
+arr196_2.splice(3, 0,'a', 'b', 'c');
+console.log(arr196_2);
+
+// Задание 196 №3
+console.log('Результат задания 196 №3:');
+let arr196_3 = [1, 2, 3, 4, 5];
+arr196_3.splice(2, 0, 'a', 'b');
+arr196_3.splice(6, 0, 'c');
+arr196_3.splice(8, 0, 'e');
+console.log(arr196_3);
