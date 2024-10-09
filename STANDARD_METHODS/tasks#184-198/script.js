@@ -104,3 +104,21 @@ while (str192_1.includes('-')) {
 	str192_1 = str192_1.replace('-', '.');
 }
 console.log(str192_1);
+
+// Задание 193 №1
+console.log('Результат задания 193 №1:');
+let str193_1 = '1-2-3-4-5';
+let arr193_1 = str193_1.split('-');
+console.log(arr193_1);
+
+// Задание 193 №2
+console.log('Результат задания 193 №2:');
+let str193_2 = '12345'
+let arr193_2 = str193_2.split('');
+console.log(arr193_2);
+
+// Задание 193 №3
+console.log('Результат задания 193 №3:');
+let arr193_3= [1, 2, 3, 4, 5];
+let str193_3 = arr193_3.join('-');
+console.log(str193_3);
