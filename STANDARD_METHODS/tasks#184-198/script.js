@@ -146,3 +146,15 @@ console.log('Результат задания 194 №4:');
 let arr194_4 = [1, 2, 3];
 arr194_4.unshift(4, 5, 6);
 console.log(arr194_4);
+
+// Задание 195 №1
+console.log('Результат задания 195 №1:');
+let arr195_1 = [1, 2, 3, 4, 5];
+let sub195_1 = arr195_1.slice(0, 3);
+console.log(sub195_1);
+
+// Задание 195 №2
+console.log('Результат задания 195 №2:');
+let arr195_2 = [1, 2, 3, 4, 5];
+let sub195_2 = arr195_2.slice(3);
+console.log(sub195_2);
