@@ -122,3 +122,27 @@ console.log('Результат задания 193 №3:');
 let arr193_3= [1, 2, 3, 4, 5];
 let str193_3 = arr193_3.join('-');
 console.log(str193_3);
+
+// Задание 194 №1
+console.log('Результат задания 194 №1:');
+let arr194_1 = [1, 2, 3];
+let elem = arr194_1.shift();
+console.log(elem);
+
+// Задание 194 №2
+console.log('Результат задания 194 №2:');
+let arr194_2 = [1, 2, 3];
+let del = arr194_2.pop();
+console.log(del);
+
+// Задание 194 №3
+console.log('Результат задания 194 №3:');
+let arr194_3 = [1, 2, 3];
+arr194_3.push(4, 5, 6);
+console.log(arr194_3);
+
+// Задание 194 №4
+console.log('Результат задания 194 №4:');
+let arr194_4 = [1, 2, 3];
+arr194_4.unshift(4, 5, 6);
+console.log(arr194_4);
