@@ -15,3 +15,23 @@ function res200_2() {
   console.log(sum200_2);
 }
 res200_2();
+
+// Задание 201 №1
+console.log('Результат задания 201 №1:');
+function cub(num201_1) {
+	console.log(num201_1 ** 3);
+}
+cub(5);
+
+// Задание 201 №2
+console.log('Результат задания 201 №2:');
+function positive_or_negative(num201_2) {
+	if (num201_2 < 0){
+		console.log('---');	
+	}
+	else {
+		console.log ('+++')
+	};
+}
+positive_or_negative(5);
+positive_or_negative(-5);
