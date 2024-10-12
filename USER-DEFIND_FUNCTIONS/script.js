@@ -42,3 +42,13 @@ function sum202(num202_1, num202_2, num202_3) {
 	console.log(num202_1 + num202_2 + num202_3);
 }
 sum202(5,10,15);
+
+// Задание 203 №1
+console.log('Результат задания 203 №1:');
+function sum203(num203_1, num203_2, num203_3) {
+	console.log(num203_1 + num203_2 + num203_3);
+}
+let param203_1 = 1;
+let param203_2 = 2;
+let param203_3 = 3;
+sum203(param203_1, param203_2, param203_3);
