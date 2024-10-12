@@ -35,3 +35,10 @@ function positive_or_negative(num201_2) {
 }
 positive_or_negative(5);
 positive_or_negative(-5);
+
+// Задание 202 №1
+console.log('Результат задания 202 №1:');
+function sum202(num202_1, num202_2, num202_3) {
+	console.log(num202_1 + num202_2 + num202_3);
+}
+sum202(5,10,15);
