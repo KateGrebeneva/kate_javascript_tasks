@@ -187,3 +187,43 @@ function func210(num210_1, num210_2) {
 }
 console.log(func210(3, 4));  
   
+// Задание 211 №1
+console.log('Результат задания 211 №1:');
+let arr211_1 = [12,42,64,68];
+function func211_1(arr211_1) {
+	for (let elem211_1 of arr211_1) {
+		if (elem211_1 % 2 == 0) {
+			return true;
+		}
+	}	
+	return false;
+}
+console.log(func211_1(arr211_1));
+
+// Задание 211 №2
+console.log('Результат задания 211 №2:');
+let num211_2 = 535;
+function func211_2(num211_2) {
+    let str = num211_2.toString();
+    for (let elem211_2 of str) {
+      if (Number(elem211_2) % 2 == 0) {
+        return false;
+      }
+    }
+    return true;
+  }
+  console.log(func211_2(num211_2));
+
+// Задание 211 №3
+console.log('Результат задания 211 №3:');
+  let arr211_3 = [5,15,25,25,45,55];
+  function func211_3(arr211_3) {
+    for (let i = 1; i < arr211_3.length; i++) {
+      if (arr211_3[i] === arr211_3[i - 1]) {
+        return true;
+      }
+    }
+    return false;
+  }
+  console.log(func211_3(arr211_3));
+  
