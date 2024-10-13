@@ -175,6 +175,15 @@ function func209(num) {
 	return res209; 
 }
 console.log(func209(160)); 
-  
-  
+ 
+// Задание 210 №1
+console.log('Результат задания 210 №1:');
+function func210(num210_1, num210_2) { 
+	if (num210_1 > 0 && num210_2 > 0) {
+		return num210_1 * num210_2;
+	} else {
+		return num210_1 - num210_2;
+	}
+}
+console.log(func210(3, 4));  
   
