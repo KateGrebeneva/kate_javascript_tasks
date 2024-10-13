@@ -226,4 +226,31 @@ console.log('Результат задания 211 №3:');
     return false;
   }
   console.log(func211_3(arr211_3));
-  
+
+// Задание 212 №1
+console.log('Результат задания 212 №1:');
+function func212_1(a, b) {
+	return a == b;
+}
+console.log(func212_1(5,10));
+
+// Задание 212 №2
+console.log('Результат задания 212 №2:');
+function func212_2(l, k) {
+	return l != k;
+}
+console.log(func212_2(1,3));
+
+// Задание 212 №3
+console.log('Результат задания 212 №3:');
+function func212_3(c, d) {
+	return c + d >= 10;
+}
+console.log(func212_3(15,12));
+
+// Задание 212 №4
+console.log('Результат задания 212 №4:');
+function func212_4(num212_4) {
+	return num212_4 >= 0;
+}
+console.log(func212_4(-5));
