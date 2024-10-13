@@ -294,4 +294,122 @@ function func213_3(arr213_3) {
 	return sum213_4;
   }
   
+// Задание 214 №1
+console.log('Результат задания 214 №1:');
+function func214() {
+	return 3;
+}
+function func214_1() {
+	return 5;
+}
+console.log(func214() + func214_1()); 
+
+// Задание 214 №2
+console.log('Результат задания 214 №2:');
+function sum214_2(arr214_2) {
+	let res214_2 = 0;
+	for (let elem214_2 of arr214_2) {
+	  res214_2 += elem214_2;
+	}
+	return res214_2; 
+  }
+  console.log(sum214_2([1, 2, 3, 4, 5])); 
+
+// Задание 214 №3
+console.log('Результат задания 214 №3:');
+let arr214_3 = [1, 2, 3, 4, 5];
+function func214_3(arr214_3) {
+  let res214_3 = 0;
+  for (let elem214_3 of arr214_3) {
+    res214_3 += elem214_3;
+  }
+  console.log(res214_3); 
+}
+func214_3(arr214_3); 
+
+// Задание 214 №4
+console.log('Результат задания 214 №4:');
+function func214_4_1() {
+	return 3;
+  }
+  function func214_4_2() {
+	return 5;
+  }
+  console.log(func214_4_1() + func214_4_2()); 
+  
+// Задание 214 №5
+console.log('Результат задания 214 №5:');
+function sum214_5(arr214_5) {
+	let total214_5 = 0; // Переименовано для ясности
+	for (let elem214_5 of arr214_5) {
+	  total214_5 += elem214_5;
+	}
+	return total214_5; 
+  }
+  let result214_5 = sum214_5([1, 2, 3, 4, 5]);
+  console.log(result214_5); 
+  
+// Задание 214 №6
+console.log('Результат задания 214 №6:');
+function sum214_6(arr214_6) {
+	let total214_6 = 0;
+	for (let elem214_6 of arr214_6) {
+	  total214_6 += elem214_6;
+	}
+	return total214_6; 
+  }
+  let res214_6 = sum214_6([1, 2, 3, 4, 5]);
+  console.log(res214_6);  
+
+// Задание 214 №7
+console.log('Результат задания 214 №7:');
+function add214_7(num) {
+	if (num <= 9) {
+	  return '0' + num;
+	}
+	return num;
+  }
+  console.log(add214_7(5)); 
+  console.log(add214_7(10)); 
+
+// Задание 214 №8
+console.log('Результат задания 214 №8:');
+function sum214_8(arr214_8) {
+	let res214_8 = 0;
+	for (let elem214_8 of arr214_8) {
+	  res214_8 += elem214_8;
+	}
+	return res214_8;
+  }
+  let arr214_8 = [1, 2, 3, 4, 5];
+  let total214_8 = sum214_8(arr214_8);
+  console.log(total214_8); 
+  
+// Задание 214 №9
+console.log('Результат задания 214 №9:');
+let num214_9 = '12345'; 
+let res214_9 = func214_9(num214_9);
+console.log(res214_9);
+
+function func214_9(num214_9) {
+  let sum214_9 = 0;
+  for (let elem214_9 of num214_9) { 
+    sum214_9 += parseInt(elem214_9); 
+  }
+  
+  return sum214_9;
+}
+
+// Задание 214 №10
+console.log('Результат задания 214 №10:');
+function func214_10(num214_10) {
+	if (num214_10 < 2) return false; 
+	for (let i = 2; i <= Math.sqrt(num214_10); i++) { 
+	  if (num214_10 % i === 0) {
+		return false; 
+	  }
+	}
+	return true; 
+  }
+  console.log(func214_10(13)); 
   
