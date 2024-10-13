@@ -86,3 +86,40 @@ function func205_2(num205_2) {
 }
 let res205_2 = func205_2(3) + func205_2(4);
 console.log(res205_2);
+
+// Задание 206 №1
+console.log('Результат задания 206 №1:');
+function sqrt206_1(num) {
+	return Math.sqrt(num);
+  }
+  function round206_1(num) {
+	return num.toFixed(3);
+  }
+  const res206_1 = round206_1(sqrt206_1(2));
+  console.log(res206_1); 
+  
+// Задание 206 №2
+console.log('Результат задания 206 №2:');
+  function sqrt206_2(num) {
+	return Math.sqrt(num);
+  }
+  function sum206_2(num206_1, num206_2, num206_3) {
+	return num206_1 + num206_2 + num206_3;
+  }
+  const res206_2 = sum206_2(sqrt206_2(2), sqrt206_2(3), sqrt206_2(4));
+  console.log(res206_2); 
+  
+// Задание 206 №3
+console.log('Результат задания 206 №3:');
+  function sqrt206_3(num) {
+	return Math.sqrt(num);
+  }
+  function sum206_3(num206_1, num206_2, num206_3) {
+	return num206_1 + num206_2 + num206_3;
+  }
+  function round(num) {
+	return num.toFixed(3);
+  }
+  const res206_3 = round(sum206_3(sqrt206_3(2), sqrt206_3(3), sqrt206_3(4)));
+  console.log(res206_3); 
+  
