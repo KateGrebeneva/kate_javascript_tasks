@@ -44,3 +44,8 @@
 <p>
  <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHNweXdoOHBmdXd5cm5wdHdhNHh5MWNheWJsdDl2MmxoMGxtZGlzaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QXbDsbCn1to3WFCgzb/giphy.gif" width="135px"/><a href="https://github.com/KateGrebeneva/kate_javascript_tasks/tree/main/USER-DEFIND_FUNCTIONS">Решенные задачи с №200-215</a>
 </p>
+
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Libre+Baskerville&size=22&pause=1000&color=D45050&width=435&lines=%F0%9F%8E%80+Tasks+%22FUNCTION+VARIABLES%22" alt="Typing SVG" /></a>
+<p>
+ <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMHNweXdoOHBmdXd5cm5wdHdhNHh5MWNheWJsdDl2MmxoMGxtZGlzaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/QXbDsbCn1to3WFCgzb/giphy.gif" width="135px"/><a href="https://github.com/KateGrebeneva/kate_javascript_tasks/tree/main/FUNCTION%20VARIABLES">Решенные задачи с №215-218</a>
+</p>
