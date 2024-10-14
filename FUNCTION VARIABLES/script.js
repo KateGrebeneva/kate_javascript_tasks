@@ -36,3 +36,19 @@
 // 	return num;
 // }
 // console.log(func()); // Результат выполнения задания = выдаст ошибку
+
+// Задание 218 №1
+// let num = 1;
+// function func() {
+// 	num = 2;
+// }
+// func();
+// console.log(num); // Результат выполнения задания = 2
+
+// Задание 218 №2
+// let num = 1;
+// function func() {
+// 	let num = 2;
+// }
+// func();
+// console.log(num); // Результат выполнения задания = 1
