@@ -62,3 +62,16 @@ console.log(func226_1() + func226_2())
 //   console.log('!') ;
 // }
 
+// Задание 229 №1
+console.log('Результат задания 229 №1:');
+func228_1(); 
+function func228_1() {
+  console.log('Hey! My name is Catherine');
+}
+
+// Задание 229 №2
+// func228_2(); // будет ошибка объявления
+// let func228_2 = function() {
+// 	console.log('Hey! My name is Catherine');
+// };
+
