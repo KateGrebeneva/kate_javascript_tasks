@@ -195,3 +195,51 @@
 // func();
 // console.log(num); // Результат выполнения задания = 1
 
+// Задание 222 №1
+// function func(obj) {
+//   obj.a = '!';
+// }
+// let obj = {a: 1, b: 2, c: 3};
+// func(obj);
+// console.log(obj); // Результат выполнения задания = {a: '!', b: 2, c: 3}
+
+// Задание 222 №2
+// function func(arg) {
+//   arg = '!';
+// }
+// let obj = {a: 1, b: 2, c: 3};
+// func(obj.a);
+// console.log(obj); // Результат выполнения задания = {a: 1, b: 2, c: 3}
+
+// Задание 222 №3
+// function func(obj) {
+//   obj = '!';
+// }
+// let obj = {a: 1, b: 2, c: 3};
+// func(obj.a);
+// console.log(obj); // Результат выполнения задания = {a: 1, b: 2, c: 3}
+
+// Задание 222 №4
+// function func(arr) {
+//   arr.splice(1, 1);
+// }
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr); // Результат выполнения задания = [1, 3]
+
+// Задание 222 №5
+// function func(arr) {
+//   arr.slice(1, 1);
+// }
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr); // Результат выполнения задания = [1, 2, 3]
+
+// Задание 222 №6
+// function func(arr) {
+//   let newArr = arr;
+//   newArr[0] = '!';
+// }
+// let arr = [1, 2, 3];
+// func(arr);
+// console.log(arr); // Результат выполнения задания = ['!', 2, 3]
