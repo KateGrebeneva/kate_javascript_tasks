@@ -75,3 +75,11 @@ function func228_1() {
 // 	console.log('Hey! My name is Catherine');
 // };
 
+// Задание 230 №1
+let func1 = function() {console.log('!')};
+let func2 = function() {
+	console.log('!')
+};
+function func3() {
+	console.log('!')
+}
