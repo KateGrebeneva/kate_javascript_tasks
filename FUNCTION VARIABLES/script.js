@@ -117,3 +117,56 @@
 // let num = 1;
 // func();
 // console.log(num); // Результат выполнения задания = 2
+
+// Задание 220 №1
+// function func(localNum) {
+//   console.log(localNum);
+// }
+// func(1); // Результат выполнения задания = 1
+
+// Задание 220 №2
+// function func(localNum) {
+//   console.log(localNum);
+// }
+// let num = 1;
+// func(num); // Результат выполнения задания = 1
+
+// Задание 220 №3
+// function func(localNum) {
+//   console.log(localNum);
+// }
+// let num = 1;
+// func(num);
+// num = 2; // Результат выполнения задания = 1
+
+// Задание 220 №4
+// let num = 1;
+// function func(localNum) {
+//   console.log(localNum);
+// }
+// num = 2;
+// func(num); // Результат выполнения задания = 2
+
+// Задание 220 №5
+// function func(localNum) {
+//   localNum = 2;
+// }
+// let num = 1;
+// func(num);
+// console.log(num); // Результат выполнения задания = 1
+
+// Задание 220 №6
+// function func(localNum) {
+//   num = 2;
+// }
+// let num = 1;
+// func(num);
+// console.log(num); // Результат выполнения задания = 2
+
+// Задание 220 №7
+// function func(localNum) {
+//   let num = 2;
+// }
+// let num = 1;
+// func(num);
+// console.log(num); // Результат выполнения задания = 1
