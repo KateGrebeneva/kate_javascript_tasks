@@ -270,3 +270,35 @@ for (let key in obj238) {
 console.log('Результат задания 238 №2:');
 let res238 = obj238.func238_1() + obj238.func238_2() + obj238.func238_3();
 console.log(res238); 
+
+// Задание 239 №1
+console.log('Результат задания 239 №1:');
+let task239 = {
+	sum: function (arr239) {
+        let result = 0;
+        for (let num of arr239) {
+            result += num;
+        }
+        return result;
+    },
+    sumSquares: function (arr239) {
+        let result = 0;
+        for (let num of arr239) {
+            result += num ** 2;
+        }
+        return result;
+    },
+    sumCubes: function (arr239) {
+        let result = 0;
+        for (let num of arr239) {
+            result += num ** 3;
+        }
+        return result;
+    }
+};
+  let arr239 = [5, 10, 15, 20];
+
+  console.log('Сумма всех элементов массива = ' + (task239.sum(arr239)));   
+  console.log('Сумма всех элементов массива,возведенных в квадрат = ' + (task239.sumSquares(arr239))); 
+  console.log('Сумма всех элементов массива,возведенных в куб = ' + (task239.sumCubes(arr239))); 
+	
