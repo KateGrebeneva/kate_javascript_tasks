@@ -86,150 +86,172 @@ function func3() {
 
 // Задание 231 №1
 // Ниже представленная функция - Function Declaration
-function func() {
-	console.log('!');
-} 
+// function func() {
+// 	console.log('!');
+// } 
 
 // Задание 231 №2
 // Ниже представленная функция - Function Expression
-let func = function() {
-	console.log('!');
-}; 
+// let func = function() {
+// 	console.log('!');
+// }; 
 
 // Задание 231 №3
 // Ниже представленная функция - Function Expression
-+function() {
-	console.log('!');
-} 
+// +function() {
+// 	console.log('!');
+// } 
 
 // Задание 231 №4
 // Ниже представленная функция - Function Expression
-!function func() {
-	console.log('!');
-} 
+// !function func() {
+// 	console.log('!');
+// } 
 
 // Задание 231 №5
 // Ниже представленная функция - Function Expression
--function func() {
-	console.log('!');
-} 
+// -function func() {
+// 	console.log('!');
+// } 
 
 // Задание 231 №6
 // Ниже представленная функция - Function Expression
-1 + function func() {
-	console.log('!');
-} 
+// 1 + function func() {
+// 	console.log('!');
+// } 
 
 // Задание 231 №7
 // Ниже представленная функция - Function Expression
-(function func() {
-	console.log('!');
-}) 
+// (function func() {
+// 	console.log('!');
+// }) 
 
 // Задание 231 №8
 // Ниже представленная функция - Function Expression
-console.log(
-	function() {
-		console.log('!');
-	}
-); 
+// console.log(
+// 	function() {
+// 		console.log('!');
+// 	}
+// ); 
 
 // Задание 234 №1
 // Ниже представленная функция - Function Expression
-let test = function func() {
-	console.log('!');
-} 
+// let test = function func() {
+// 	console.log('!');
+// } 
 
 // Задание 234 №2
 // Ниже представленная функция - Function Expression
-console.log(
-	function func() {
-		console.log('!');
-	}
-); 
+// console.log(
+// 	function func() {
+// 		console.log('!');
+// 	}
+// ); 
 
 // Задание 234 №3
 // Ниже представленная функция - Function Expression
-+function func() {
-	console.log('!');
-} //Function Expression
+// +function func() {
+// 	console.log('!');
+// }
 
 // Задание 234 №4
 // Ниже представленная функция - Function Declaration
-function func() {
-	console.log('!');
-} 
+// function func() {
+// 	console.log('!');
+// } 
 
 // Задание 235 №1
 // Ниже представленная функция - Function Expression
--
-function func() {
-	console.log('!');
-} 
+// -
+// function func() {
+// 	console.log('!');
+// } 
 
 // Задание 235 №2
 // Ниже представленная функция - Function Declaration
--1;
-function func() {
-	console.log('!');
-} 
+// -1;
+// function func() {
+// 	console.log('!');
+// } 
 
 // Задание 235 №3
 // Ниже представленная функция - Function Declaration
--1
-function func() {
-	console.log('!');
-} 
+// -1
+// function func() {
+// 	console.log('!');
+// } 
 
 // Задание 235 №4
 // Ниже представленная функция - Function Declaration
-1
-function func() {
-	console.log('!');
-} 
+// 1
+// function func() {
+// 	console.log('!');
+// } 
 
-// Задание 235 №4
+// Задание 235 №5
 // Ниже представленная функция - Function Expression
--1-
-function func() {
-	console.log('!');
-} 
+// -1-
+// function func() {
+// 	console.log('!');
+// } 
 
 // Задание 236 №1
 // Ниже представленная функция - Function Declaration
-function func() {
-	console.log('!');
-}
-+1; 
+// function func() {
+// 	console.log('!');
+// }
+// +1; 
 
 // Задание 236 №2
 // Ниже представленная функция - Function Declaration
-function func() {
-	console.log('!');
-} + 1; 
-
-// Задание 236 №2
-// Ниже представленная функция - Function Expression
-+function func() {
-	console.log('!');
-} + 1; 
+// function func() {
+// 	console.log('!');
+// } + 1; 
 
 // Задание 236 №3
 // Ниже представленная функция - Function Expression
-+
-function func() {
-	console.log('!');
-} + 1; 
+// +function func() {
+// 	console.log('!');
+// } + 1; 
 
 // Задание 236 №4
-// Ниже представленная функция - Function Declaration
-+ 1
-function func() {
-	console.log('!');
-} + 1; 
+// Ниже представленная функция - Function Expression
+// +
+// function func() {
+// 	console.log('!');
+// } + 1; 
 
 // Задание 236 №5
 // Ниже представленная функция - Function Declaration
-function func() {
-	console.log('!');
-} + console.log('!'); 
+// + 1
+// function func() {
+// 	console.log('!');
+// } + 1; 
+
+// Задание 236 №6
+// Ниже представленная функция - Function Declaration
+// function func() {
+// 	console.log('!');
+// } + console.log('!'); 
+
+// Задание 237 №1
+console.log('Результат задания 237:');
+let arr237 = [
+	function() { return 1; },
+	function() { return 2; },
+	function() { return 3; },
+  ];
+
+// Задание 237 №2
+console.log(arr237[2]()); 
+
+// Задание 237 №4
+for (let func237 of arr237) {
+	console.log(func237());
+  }
+
+// Задание 237 №3
+let sum237 = arr237[0]() + arr237[1]() + arr237[2]();
+console.log(sum237); 
+
+  
