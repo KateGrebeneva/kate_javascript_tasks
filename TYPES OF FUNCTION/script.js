@@ -254,4 +254,19 @@ for (let func237 of arr237) {
 let sum237 = arr237[0]() + arr237[1]() + arr237[2]();
 console.log(sum237); 
 
-  
+// Задание 238 №1
+console.log('Результат задания 238 №1:');
+let obj238 = {
+	func238_1: function() {return 1},
+	func238_2: function() {return 2},
+	func238_3: function() {return 3},
+};
+
+for (let key in obj238) {
+	console.log(obj238[key]())
+}
+
+// Задание 238 №2
+console.log('Результат задания 238 №2:');
+let res238 = obj238.func238_1() + obj238.func238_2() + obj238.func238_3();
+console.log(res238); 
