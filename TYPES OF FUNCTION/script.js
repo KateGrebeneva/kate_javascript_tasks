@@ -83,3 +83,53 @@ let func2 = function() {
 function func3() {
 	console.log('!')
 }
+
+// Задание 231 №1
+// Ниже представленная функция - Function Declaration
+// function func() {
+// 	console.log('!');
+// } 
+
+// Задание 231 №2
+// Ниже представленная функция - Function Expression
+// let func = function() {
+// 	console.log('!');
+// }; 
+
+// Задание 231 №3
+// Ниже представленная функция - Function Expression
+// +function() {
+// 	console.log('!');
+// } 
+
+// Задание 231 №4
+// Ниже представленная функция - Function Expression
+// !function func() {
+// 	console.log('!');
+// } 
+
+// Задание 231 №5
+// Ниже представленная функция - Function Expression
+// -function func() {
+// 	console.log('!');
+// } 
+
+// Задание 231 №6
+// Ниже представленная функция - Function Expression
+// 1 + function func() {
+// 	console.log('!');
+// } 
+
+// Задание 231 №7
+// Ниже представленная функция - Function Expression
+// (function func() {
+// 	console.log('!');
+// }) 
+
+// Задание 231 №8
+// Ниже представленная функция - Function Expression
+// console.log(
+// 	function() {
+// 		console.log('!');
+// 	}
+// ); 
