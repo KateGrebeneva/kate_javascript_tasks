@@ -86,50 +86,76 @@ function func3() {
 
 // Задание 231 №1
 // Ниже представленная функция - Function Declaration
-// function func() {
-// 	console.log('!');
-// } 
+function func() {
+	console.log('!');
+} 
 
 // Задание 231 №2
 // Ниже представленная функция - Function Expression
-// let func = function() {
-// 	console.log('!');
-// }; 
+let func = function() {
+	console.log('!');
+}; 
 
 // Задание 231 №3
 // Ниже представленная функция - Function Expression
-// +function() {
-// 	console.log('!');
-// } 
++function() {
+	console.log('!');
+} 
 
 // Задание 231 №4
 // Ниже представленная функция - Function Expression
-// !function func() {
-// 	console.log('!');
-// } 
+!function func() {
+	console.log('!');
+} 
 
 // Задание 231 №5
 // Ниже представленная функция - Function Expression
-// -function func() {
-// 	console.log('!');
-// } 
+-function func() {
+	console.log('!');
+} 
 
 // Задание 231 №6
 // Ниже представленная функция - Function Expression
-// 1 + function func() {
-// 	console.log('!');
-// } 
+1 + function func() {
+	console.log('!');
+} 
 
 // Задание 231 №7
 // Ниже представленная функция - Function Expression
-// (function func() {
-// 	console.log('!');
-// }) 
+(function func() {
+	console.log('!');
+}) 
 
 // Задание 231 №8
 // Ниже представленная функция - Function Expression
-// console.log(
-// 	function() {
-// 		console.log('!');
-// 	}
-// ); 
+console.log(
+	function() {
+		console.log('!');
+	}
+); 
+
+// Задание 234 №1
+// Ниже представленная функция - Function Expression
+let test = function func() {
+	console.log('!');
+} 
+
+// Задание 234 №2
+// Ниже представленная функция - Function Expression
+console.log(
+	function func() {
+		console.log('!');
+	}
+); 
+
+// Задание 234 №3
+// Ниже представленная функция - Function Expression
++function func() {
+	console.log('!');
+} //Function Expression
+
+// Задание 234 №4
+// Ниже представленная функция - Function Declaration
+function func() {
+	console.log('!');
+} 
