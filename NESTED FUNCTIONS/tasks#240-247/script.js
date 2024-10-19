@@ -80,3 +80,19 @@ function test242_4(func242_4) {
     alert('Результат задания 242 №4: ' + func242_4(2, 3)); 
 }
 test242_4(func242_4);
+
+// Задание 243 №1
+console.log('Результат задания 243 №1:');
+function test243(num, func243_1, func243_2) {
+    return func243_1(num) + func243_2(num);
+}
+function square(num) {
+    return num * num;
+}
+function cube(num) {
+    return num * num * num;
+}
+const result243 = test243(3, square, cube);
+console.log(result243); 
+
+
