@@ -122,3 +122,47 @@ function func245(num1, num2) {
   }
   console.log(func245(2, 3)); 
 
+// Задание 246 №1
+//   function test() {
+// 	let num = 1;
+// 	function func() {
+// 	  console.log(num);
+// 	}
+// 	func();
+//   }
+//   test();
+// Результатом выведения в консоль будет: 1
+
+// Задание 246 №2
+// function test() {
+// 	let num = 1;
+// 	function func() {
+// 	  console.log(num);
+// 	}
+//   }
+//   test();
+// Результатом выведения в консоль будет: ничего, ибо функция никогда не вызывается. 
+
+// Задание 246 №3
+// function test() {
+// 	let num = 1;	
+// 	function func() {
+// 	  console.log(num);
+// 	}	
+// 	func();
+//   }
+// Результатом выведения в консоль будет: 1 
+
+// Задание 246 №4
+// function test() {
+// 	let num;
+// 	function func() {
+// 	  console.log(num);
+// 	}
+// 	num = 1;
+// 	func(); // Первый вызов
+// 	num = 2;
+// 	func(); // Второй вызов
+//   }
+//   test();
+// Результатом выведения в консоль будет: 1 2
