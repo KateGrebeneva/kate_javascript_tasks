@@ -166,3 +166,24 @@ function func245(num1, num2) {
 //   }
 //   test();
 // Результатом выведения в консоль будет: 1 2
+
+// Задание 247 №1
+// function test(num1, num2) {
+// 	function func() {
+// 		console.log(num1 + num2);
+// 	}
+// 	func();
+// }
+// test(1, 2); 
+// Результатом выведения в консоль будет: 3
+
+// Задание 247 №2
+// function test(num1, num2) {
+// 	function func() {
+// 		console.log(num1 + num2);
+// 	}
+// 	num1 = 2;
+// 	func();
+// }
+// test(1, 2); 
+// Результатом выведения в консоль будет: 4
