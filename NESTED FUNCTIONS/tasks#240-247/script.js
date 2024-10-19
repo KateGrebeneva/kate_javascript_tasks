@@ -95,4 +95,17 @@ function cube(num) {
 const result243 = test243(3, square, cube);
 console.log(result243); 
 
+// Задание 244
+console.log('Результат задания 244:');
+function test244(arr244, func244) {
+    for (let i = 0; i < arr244.length; i++) {
+        arr244[i] = func244(arr244[i]); 
+    }
+    
+    return arr244; 
+}
+let result244 = test244([1, 2, 3], function(num) {
+    return num * num * num; 
+});
+console.log(result244); 
 
