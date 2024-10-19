@@ -109,3 +109,16 @@ let result244 = test244([1, 2, 3], function(num) {
 });
 console.log(result244); 
 
+// Задание 245 №1
+console.log('Результат задания 245 №1:');
+function func245(num1, num2) {
+	function square245(num) {
+	  return num * num;
+	}
+	function cube245(num) {
+	  return num * num * num;
+	}
+	return square245(num1) + cube245(num2);
+  }
+  console.log(func245(2, 3)); 
+
