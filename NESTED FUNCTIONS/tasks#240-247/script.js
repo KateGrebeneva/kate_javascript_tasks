@@ -43,3 +43,40 @@ let func241_3 = function() {
 const result241_3 = test241(func241_1, func241_2, func241_3);
 console.log(result241_3); 
 
+// Задание 242 №1
+console.log('Результат задания 242 №1:');
+function test242_1(func242_1) {
+    console.log(func242_1(3));
+}
+test242_1(function(num) {
+    return num * num * num; 
+});
+
+// Задание 242 №2
+console.log('Результат задания 242 №2:');
+function func242_2(num) {
+    return num * num * num; 
+}
+function test242_2(func242_2) {
+    console.log(func242_2(3));
+}
+test242_2(func242_2);
+
+// Задание 242 №3
+console.log('Результат задания 242 №3:');
+let func242_3 = function(num) {
+    return num * num * num; // Возвращаем куб числа
+};
+function test242_3(func242_3) {
+    console.log(func242_3(3));
+}
+test242_3(func242_3);
+
+// Задание 242 №4
+function func242_4(a, b) {
+    return a + b; 
+}
+function test242_4(func242_4) {
+    alert('Результат задания 242 №4: ' + func242_4(2, 3)); 
+}
+test242_4(func242_4);
