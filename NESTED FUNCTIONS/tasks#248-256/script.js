@@ -224,3 +224,18 @@ function square(num254) {
    
    let result254 = each([2, 5, 10], square);
    console.log(result254);
+
+// Задание 256 №1
+console.log('Результат задачи 256 №1:');
+// Упрощенный код с помощью стрелочной функции
+function filter(arr256, callback) {
+	let result256  = [];
+	for (let elem256 of arr256) {
+		if ( callback(elem256) === true ) {
+			result256 .push(elem256);
+		}
+	}
+	return result256 ;
+}
+let result256 = filter([1, 2, 3, 4, 5], elem256 => elem256 > 0);
+console.log(result256)
