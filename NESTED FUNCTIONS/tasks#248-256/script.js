@@ -205,6 +205,22 @@ function each(arr253_3, callback) {
 }
 let result253_3 = each(['kate', 'grebeneva'], function(str253_3) {
 	let splitted = str253_3.split("");
-	return splitted[0].toUpperCase();
+	return splitted[0].toUpperCase()+ str253_3.slice(1);;
 });
 console.log(result253_3);
+
+// Задание 254 №1
+console.log('Результат задачи 254 №1:');
+function square(num254) {
+	return num254 ** 3;
+   }
+   function each(arr254, callback) {
+	 let result254 = [];
+	 for (let i = 0; i < arr254.length; i++) {
+	   result254.push(callback(arr254[i]));
+	 }
+	 return result254;
+   }
+   
+   let result254 = each([2, 5, 10], square);
+   console.log(result254);
