@@ -120,3 +120,17 @@ function func250_2() {
 	};
 }
 console.log(func250_1()() + func250_2()());
+
+// Задание 251 №1
+console.log('Результат задачи 251 №1:');
+function func251() {
+	return function() {
+		return function() {
+			return function() {
+				return '!';
+			};
+		};
+	};
+}
+
+console.log(func251()()()()); 
