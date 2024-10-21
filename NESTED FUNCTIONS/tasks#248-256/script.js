@@ -134,3 +134,30 @@ function func251() {
 }
 
 console.log(func251()()()()); 
+
+// Задание 252 №1
+console.log('Результат задачи 252 №1:');
+function func252_1(num252_1) {
+	return function(num252_2) {
+		return function(num252_3) {
+			return num252_1 + num252_2 + num252_3;
+		};
+	};
+}
+console.log(func252_1(2)(3)(4)); 
+
+// Задание 252 №2
+console.log('Результат задачи 252 №2:');
+function func252_2(num1) {
+    return function(num2) {
+        return function(num3) {
+            return function(num4) {
+                return function(num5) {
+                    return [num1, num2, num3, num4, num5];
+                };
+            };
+        };
+    };
+}
+let result = func252_2(2)(3)(4)(5)(); 
+console.log(result); 
