@@ -124,7 +124,7 @@ let func = (function() {
     console.log(num);
     num++;
     if (num > 5) {
-      num = 1; // Сбрасываем счетчик, если он больше 5
+      num = 1;
     }
   }
 })();
