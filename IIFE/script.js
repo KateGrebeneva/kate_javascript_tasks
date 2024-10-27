@@ -33,3 +33,8 @@
 // };
 // console.log(result3()); 
 // Результатом выведения в консоль будет: !
+
+// Задание 266 №1
+// let result = function() {return 1;}() + function() {return 2;}();
+// console.log(result);
+// Результатом выведения в консоль будет: 3
