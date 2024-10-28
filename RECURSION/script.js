@@ -48,3 +48,35 @@ function func276_2(arr276_2) {
 let massive = [];
 func276_2([1, [2, 7, 8], [3, 4, [5, [6, 7]]]]);
 console.log(massive);
+
+// Задание 277 №1
+console.log('Результат задачи 277 №1:');
+let obj277_1 = {a: 1, b: {c: 2, d: 3, e: 4}, f: {g: 5, j: 6, k: {l: 7, m: {n: 8, o: 9}}}}; 
+function func277_1(obj277_1) { 
+  let sum277_1 = 0; 
+  for(let elem277_1 in obj277_1) { 
+    if(typeof obj277_1[elem277_1] == 'object') { 
+      sum277_1 += func277_1(obj277_1[elem277_1]); 
+    } else { 
+      sum277_1 += obj277_1[elem277_1]; 
+    } 
+  } 
+  return sum277_1; 
+} 
+console.log(func277_1(obj277_1)); 
+
+// Задание 277 №2
+console.log('Результат задачи 277 №2:');
+function func277_2(arr277_2) {
+	let sum277_2 = [];
+	for (let elem277_2 of arr277_2) {
+		if (typeof elem277_2 == 'object') {
+			sum277_2 += func277_2(elem277_2);
+		} else {
+			sum277_2 += elem277_2;
+		}
+	}
+	return sum277_2;
+}
+console.log(func277_2(['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]] )); 
+
