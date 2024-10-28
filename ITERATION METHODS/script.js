@@ -120,3 +120,27 @@ let res281_6 = arr281_6.filter(function(elem281_6) {
 		}
 });
 console.log(res281_6);
+
+// Задание 282 №1
+console.log('Результат задачи 282 №1:');
+let arr282_1 = [5, 10, 15, 20, 25];
+let check282_1 = arr282_1.every(function(elem282_1) {
+	if (elem282_1 > 0) {
+		return true;
+	} else {
+		return false;
+	}
+});
+console.log(check282_1);
+
+// Задание 282 №2
+console.log('Результат задачи 282 №2:');
+let arr282_2 = [0, 5, 10, 15, 20, 25];
+let check282_2 = arr282_2.every(function(elem282_2, index282_2) {
+	if (elem282_2 * (index282_2 + 1) < 30) {
+		return true;
+	} else {
+		return false;
+	}
+});
+console.log(check282_2);
