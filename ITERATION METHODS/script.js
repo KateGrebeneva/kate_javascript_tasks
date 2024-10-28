@@ -144,3 +144,17 @@ let check282_2 = arr282_2.every(function(elem282_2, index282_2) {
 	}
 });
 console.log(check282_2);
+
+// Задание 283 №1
+console.log('Результат задачи 283 №1:');
+let arr283_1 = [0, -1, -2, 5];
+let result283_1 = arr283_1.some(elem283_1 => elem283_1 > 0);
+console.log(result283_1);
+
+// Задание 283 №2
+console.log('Результат задачи 283 №2:');
+let arr283_2 = [0, 5, 10, 15];
+let result283_2 = arr283_2.some(function(elem283_2, index283_2) {
+	return elem283_2 * (index283_2 + 1) > 30;
+});
+console.log(result283_2);
