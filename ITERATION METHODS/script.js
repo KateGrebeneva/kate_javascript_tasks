@@ -156,5 +156,5 @@ console.log('Результат задачи 283 №2:');
 let arr283_2 = [0, 5, 10, 15];
 let result283_2 = arr283_2.some(function(elem283_2, index283_2) {
 	return elem283_2 * (index283_2 + 1) > 30;
-});
+} );
 console.log(result283_2);
