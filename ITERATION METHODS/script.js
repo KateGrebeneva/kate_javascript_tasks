@@ -40,3 +40,11 @@ let multipliedArray = numbersArray.map(function(num, index) {
 });
 console.log(multipliedArray); 
 
+// Задание 280 №1
+console.log('Результат задачи 280 №1:');
+let arr280 = [1, 2, 3, 4, 5];
+let sum280 = 0;
+arr280.forEach(function(elem280) {
+	sum280 += elem280 ** 2;
+});
+console.log(sum280);
