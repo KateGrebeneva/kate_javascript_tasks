@@ -48,3 +48,75 @@ arr280.forEach(function(elem280) {
 	sum280 += elem280 ** 2;
 });
 console.log(sum280);
+
+// Задание 281 №1
+console.log('Результат задачи 281 №1:');
+let arr281_1 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
+let res281_1 = arr281_1.filter(function(elem281_1) {
+	if (elem281_1 >= 0) {
+		return true;
+	} else {
+		return false;
+	}
+});
+console.log(res281_1);
+
+// Задание 281 №2
+console.log('Результат задачи 281 №2:');
+let arr281_2 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
+let res281_2 = arr281_2.filter(function(elem281_2) {
+	if (elem281_2 < 0) {
+		return true;
+	} else {
+		return false;
+	}
+});
+console.log(res281_2);
+
+// Задание 281 №3
+console.log('Результат задачи 281 №3:');
+let arr281_3 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
+let res281_3 = arr281_3.filter(function(elem281_3) {
+	if (elem281_3 > 0 && elem281_3 < 10) {
+		return true;
+	} else {
+		return false;
+	}
+});
+console.log(res281_3);
+
+// Задание 281 №4
+console.log('Результат задачи 281 №4:');
+let arr281_4 = ['pony', 'Krosh', 'Flora'];
+let res281_4 = arr281_4.filter(function(elem281_4) {
+	if (elem281_4.length >= 5) {
+		return true;
+	} else {
+		return false;
+	}
+});
+console.log(res281_4);
+
+// Задание 281 №5
+console.log('Результат задачи 281 №5:');
+let arr281_5 = [-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5];
+let res281_5 = arr281_5.filter(function(elem, index) {
+		if (elem * (index + 1) < 30) {
+			return true;
+		} else {
+			return false;
+		}
+});
+console.log(res281_5);
+
+// Задание 281 №6
+console.log('Результат задачи 281 №6:');
+let arr281_6 = [1, 2, [3, 4], 5, [6, 7]];
+let res281_6 = arr281_6.filter(function(elem281_6) {
+		if (typeof elem281_6 == 'object') {
+			return false;
+		} else {
+			return true;
+		}
+});
+console.log(res281_6);
