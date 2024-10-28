@@ -80,3 +80,17 @@ function func277_2(arr277_2) {
 }
 console.log(func277_2(['a', ['b', 'c', 'd'], ['e', 'f', ['g', ['j', 'k']]]] )); 
 
+// Задание 278 №1
+console.log('Результат задачи 278 №1:');
+function func278_1(arr278_1) {
+	let sum278_1 = [];	
+	for (let elem278_1 of arr278_1) {
+		if (typeof elem278_1 == 'object') {
+			sum278_1 += func278_1(elem278_1);
+		} else {
+			sum278_1 += elem278_1 ** 2 + ' ';
+		}
+	}
+	return sum278_1;
+}
+console.log(func278_1([1, [2, 7, 8], [3, 4], [5, [6, 7]]])); 
