@@ -11,3 +11,9 @@ function func297() {
 }
 let [movie, genre, hero, production, year] = func297(); 
 console.log(func297());  
+
+// Задание 298 №1
+console.log('Результат задачи 298 №1:');
+let arr298 = ['Plants', 'Flowers', 'Roses', 'Pink', 'Symbol of love'];
+let [,, type, color,] = arr298; 
+console.log(type, color)
