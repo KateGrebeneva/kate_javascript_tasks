@@ -17,3 +17,10 @@ console.log('Результат задачи 298 №1:');
 let arr298 = ['Plants', 'Flowers', 'Roses', 'Pink', 'Symbol of love'];
 let [,, type, color,] = arr298; 
 console.log(type, color)
+
+// Задание 300 №1
+console.log('Результат задачи 300 №1:');
+let arr300 = ['Angelina Ballerina', 'Story', 'Katharine Holabird', 'Eksmo', 2019];
+let [title, genres, author, publisher, date] = arr300; 
+let info = arr300.slice(2);
+console.log(info);  
