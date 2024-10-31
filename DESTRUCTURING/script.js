@@ -59,3 +59,16 @@ let options = {
 };
 let {color304, width304, height304} = options;
 console.log(color304, width304, height304);
+
+// Задание 305 №1
+console.log('Результат задачи 305 №1:');
+let task305 = {
+	color305: 'red',
+	width305:  400,
+	height305: 500,
+  };
+  let { color305: c, width305: w, height305: h } = task305;
+  console.log(c); 
+  console.log(w); 
+  console.log(h); 
+  
