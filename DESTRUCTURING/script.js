@@ -134,3 +134,21 @@ console.log('Результат задачи 309 №4:');
   }
   func309_4('development', ['John', 'Smit'], [2018, 12, 31]);
   
+// Задание 310 №1
+console.log('Результат задачи 310 №1:');
+  function func310_1({ color310_1, width310_1, height310_1 }) {
+	console.log(color310_1); 
+	console.log(width310_1);  
+	console.log(height310_1); 
+  }
+  func310_1({ color310_1: 'pink', width310_1: 500, height310_1: 550 });
+  
+// Задание 310 №2
+console.log('Результат задачи 310 №2:');
+  function func310_2({ width310_2, height310_2, color310_2 = 'purple' }) {
+	console.log(width310_2);  
+	console.log(height310_2); 
+	console.log(color310_2);  
+  }
+  func310_2({ color310_2: 'yellow', width310_2: 600, height310_2: 700 });
+  
