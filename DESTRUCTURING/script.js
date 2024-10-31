@@ -94,3 +94,43 @@ console.log('Результат задачи 307 №1:');
   console.log(l); // выведет 400
   console.log(m); // выведет 500
   
+// Задание 308 №1
+console.log('Результат задачи 309 №1:');
+function func309_1([name309_1, surname309_1, department309_1, position309_1, salary309_1]) {
+	console.log({name309_1});
+	console.log({surname309_1});
+	console.log({department309_1});
+	console.log({position309_1});
+	console.log({salary309_1});
+  }
+func309_1(['John', 'Smit', 'development', 'programmer', 2000]);
+  
+// Задание 309 №2
+console.log('Результат задачи 309 №2:');
+function func309_2([name309_2, surname309_2, ...info]) {
+	console.log({name309_2});
+	console.log({surname309_2});
+	console.log(info.join(', '));
+  }
+  func309_2(['John', 'Smit', 'development', 'programmer', 2000]);
+  
+// Задание 309 №3
+console.log('Результат задачи 309 №3:');
+function func309_3([name309_3, surname309_3, department309_3, position309_3 = 'джуниор']) {
+	console.log({name309_3});
+	console.log({surname309_3});
+	console.log({department309_3});
+	console.log({position309_3});
+  }
+  func309_3(['John', 'Smit', 'development']);
+  
+// Задание 309 №4
+console.log('Результат задачи 309 №4:');
+  function func309_4(department309_4, [name309_4, surname309_4], [year309_4, month309_4, day309_4]) {
+	console.log({department309_4});
+	console.log({name309_4});
+	console.log({surname309_4});
+	console.log({year309_4}, {month309_4}, {day309_4});
+  }
+  func309_4('development', ['John', 'Smit'], [2018, 12, 31]);
+  
