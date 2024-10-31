@@ -49,3 +49,13 @@ function getmonth() {
 let arr302 = [];
 let [year302 = getyear(), month302 = getmonth(), day302 = getday()] = arr302;
 console.log(year302, month302, day302);
+
+// Задание 304 №1
+console.log('Результат задачи 304 №1:');
+let options = {
+	color304: 'red',
+	width304:  400,
+	height304: 500,
+};
+let {color304, width304, height304} = options;
+console.log(color304, width304, height304);
