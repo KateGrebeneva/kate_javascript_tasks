@@ -30,3 +30,22 @@ console.log('Результат задачи 301 №1:');
 let arr301 = ['Club Heaven', 'Nessa Barrett', 'Pop rock'];
 let [song, author_name, type_of_song, publication = '2023'] = arr301; 
 console.log(song, author_name, type_of_song, publication);
+
+// Задание 302 №1
+console.log('Результат задачи 302 №1:');
+function getday() {
+	return (new Date).getDate();
+}
+function getyear() {
+	if (arr302[0] == undefined) {
+		return (new Date).getFullYear();
+	}
+}
+function getmonth() {
+	if (arr302[1] == undefined) {
+		return (new Date).getMonth() + 1;
+	}
+}
+let arr302 = [];
+let [year302 = getyear(), month302 = getmonth(), day302 = getday()] = arr302;
+console.log(year302, month302, day302);
