@@ -83,3 +83,14 @@ let task306 = {
   console.log(width306);  
   console.log(height306); 
   
+// Задание 307 №1
+console.log('Результат задачи 307 №1:');
+  let task307 = {
+	width307:  400,
+	height307: 500,
+  };
+  let { color307: k = 'black', width307: l, height307: m } = task307;
+  console.log(k); // выведет 'black'
+  console.log(l); // выведет 400
+  console.log(m); // выведет 500
+  
