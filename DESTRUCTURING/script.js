@@ -24,3 +24,9 @@ let arr300 = ['Angelina Ballerina', 'Story', 'Katharine Holabird', 'Eksmo', 2019
 let [title, genres, author, publisher, date] = arr300; 
 let info = arr300.slice(2);
 console.log(info);  
+
+// Задание 301 №1
+console.log('Результат задачи 301 №1:');
+let arr301 = ['Club Heaven', 'Nessa Barrett', 'Pop rock'];
+let [song, author_name, type_of_song, publication = '2023'] = arr301; 
+console.log(song, author_name, type_of_song, publication);
