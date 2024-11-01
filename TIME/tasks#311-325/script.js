@@ -64,3 +64,8 @@ let date316 = new Date(2006, 5, 30);
 let day316  = date316.getDay();
 let days316 = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
 console.log(days316[day316]);
+
+// Задание 317 №1
+console.log('Результат задачи 317 №1:');
+let date317 = new Date(2025, 0, 1,  0, 0, 0);
+console.log(date317.getTime());
