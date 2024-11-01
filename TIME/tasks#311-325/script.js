@@ -31,3 +31,19 @@ console.log('Результат задачи 313 №1:');
 let str313 = '2024-11-01'; 
 let res313 = str313.split('-').reverse().join('.'); 
 console.log(res313);
+
+console.log('Результат задачи 314:');
+// Задание 314 №1
+let date314 = new Date();
+let dayNumber = date314.getDay();
+console.log("Номер текущего дня недели:", dayNumber);
+// Задание 314 №2
+let isWeekend = (dayNumber === 0 || dayNumber === 6);
+if (isWeekend) {
+    console.log("Сегодня выходной день.");
+} else {
+    console.log("Сегодня рабочий день.");
+}
+// Задание 314 №3
+let daysUntilSunday = (7 - dayNumber) % 7; // % 7 для обработки случая, когда сегодня воскресенье
+console.log("Дней до ближайшего воскресенья:", daysUntilSunday);
