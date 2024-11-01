@@ -91,3 +91,19 @@ if (now.getDate() < birth_date.getDate()) {
     totalMonths--; // Уменьшаю на 1, если месяц неполный
 }
 console.log("Количество месяцев между моим рождением и текущей датой:", totalMonths);
+ 
+console.log('Результат задачи 319:');
+let date319_1 = new Date(2000, 8, 1); 
+let date319_2 = new Date(2010, 1, 15); 
+// Задание 319 №1
+let diffMilliseconds319 = date319_2 - date319_1; 
+console.log("Разница в миллисекундах:", diffMilliseconds319);
+// Задача 319 №2
+let diffDays319 = diffMilliseconds319 / (1000 * 60 * 60 * 24); 
+console.log("Разница в днях:", Math.floor(diffDays319));
+// Задача 319 №3
+let monthsDiff319 = (date319_2.getFullYear() - date319_1.getFullYear()) * 12 + (date319_2.getMonth() - date319_1.getMonth());
+console.log("Разница в месяцах:", monthsDiff319);
+// Задача 319 №4
+let yearsDiff319 = date319_2.getFullYear() - date319_1.getFullYear();
+console.log("Разница в годах:", yearsDiff319);
