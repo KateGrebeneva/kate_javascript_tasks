@@ -26,3 +26,8 @@ function addZero(num) {
   let year312 = date312.getFullYear();
   console.log(hours312 + ':' + minutes312 + ':' + seconds312 + ' ' + day312 + '.' + month312 + '.' + year312);
   
+// Задание 313 №1
+console.log('Результат задачи 313 №1:');
+let str313 = '2024-11-01'; 
+let res313 = str313.split('-').reverse().join('.'); 
+console.log(res313);
