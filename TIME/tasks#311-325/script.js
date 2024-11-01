@@ -67,5 +67,27 @@ console.log(days316[day316]);
 
 // Задание 317 №1
 console.log('Результат задачи 317 №1:');
-let date317 = new Date(2025, 0, 1,  0, 0, 0);
+let date317 = new Date(2025, 0, 1, 0, 0, 0);
 console.log(date317.getTime());
+
+// Задание 318 №1
+console.log('Результат задачи 318 №1:');
+let date1988 = new Date(1988, 2, 1); 
+let date2000 = new Date(2000, 0, 10);
+let diff318_1 = date2000.getTime() - date1988.getTime();
+let daysDiff318_1 = diff318_1 / (1000 * 60 * 60 * 24);
+console.log("Количество дней между 1 марта 1988 года и 10 января 2000 года:", Math.floor(daysDiff318_1));
+
+// Задание 318 №2
+console.log('Результат задачи 318 №2:');
+let birth_date = new Date(2006, 5, 30); 
+let now = new Date()
+let yearsDiff = now.getFullYear() - birth_date.getFullYear();
+let monthsDiff = now.getMonth() - birth_date.getMonth();
+// Общее количество месяцев
+let totalMonths = yearsDiff * 12 + monthsDiff;
+// Проверяю, если текущий день меньше дня рождения в текущем месяце
+if (now.getDate() < birth_date.getDate()) {
+    totalMonths--; // Уменьшаю на 1, если месяц неполный
+}
+console.log("Количество месяцев между моим рождением и текущей датой:", totalMonths);
