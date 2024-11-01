@@ -57,3 +57,10 @@ let months315 = [
 	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
 ];
 console.log(months315[month315]);
+
+// Задание 316 №1
+console.log('Результат задачи 316 №1:');
+let date316 = new Date(2006, 5, 30); 
+let day316  = date316.getDay();
+let days316 = ['вс', 'пн', 'вт', 'ср', 'чт', 'пт', 'сб'];
+console.log(days316[day316]);
