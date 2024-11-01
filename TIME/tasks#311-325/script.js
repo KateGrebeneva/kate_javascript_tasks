@@ -47,3 +47,13 @@ if (isWeekend) {
 // Задание 314 №3
 let daysUntilSunday = (7 - dayNumber) % 7; // % 7 для обработки случая, когда сегодня воскресенье
 console.log("Дней до ближайшего воскресенья:", daysUntilSunday);
+
+// Задание 315 №1
+console.log('Результат задачи 315 №1:');
+let date315 = new Date();
+let month315  = date315.getMonth();
+let months315 = [
+	'янв', 'фев', 'мар', 'апр', 'май', 'июн',
+	'июл', 'авг', 'сен', 'окт', 'ноя', 'дек'
+];
+console.log(months315[month315]);
