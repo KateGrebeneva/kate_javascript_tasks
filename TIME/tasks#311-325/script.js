@@ -170,7 +170,7 @@ console.log("Разница в годах:", yearsDiff319);
 
 
 // Задание 321 №1
-console.log('Результат задачи 318 №1:');
+console.log('Результат задачи 321 №1:');
 function getLastDayOfMonth(year, month) {
   return new Date(year, month, 0).getDate();
 }
@@ -178,9 +178,23 @@ const lastDayMay2023 = getLastDayOfMonth(2023, 5);
 console.log(lastDayMay2023);
 
 // Задание 321 №2
-console.log('Результат задачи 318 №2:');
+console.log('Результат задачи 321 №2:');
 const lastDayMay2025 = getLastDayOfMonth(2025, 5);
 const lastDate = new Date(2025, 4, lastDayMay2025); 
 const dayOfWeek = lastDate.getDay();
 const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
 console.log("Последний день мая 2025 года:", days[dayOfWeek]);
+
+// Задание 322 №1
+console.log('Результат задачи 322 №1:');
+function isLeap(year) {
+  if (year % 4 === 0) {
+      if (year % 100 === 0) {
+          return year % 400 === 0;
+      }
+      return true;
+  }
+  return false;
+}
+console.log("Год високосный? Ответ:",isLeap(2020));
+console.log("Год високосный? Ответ:",isLeap(2023)); 
