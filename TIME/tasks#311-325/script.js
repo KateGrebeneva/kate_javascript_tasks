@@ -198,3 +198,13 @@ function isLeap(year) {
 }
 console.log("Год високосный? Ответ:",isLeap(2020));
 console.log("Год високосный? Ответ:",isLeap(2023)); 
+
+// Задание 323 №1
+console.log('Результат задачи 323 №1:');
+function checkDate(year, month, day) {
+  let date = new Date(year, month, day);
+  return date.getFullYear() === year && date.getMonth() === month && date.getDate() === day;
+}
+console.log("Дата 31.12.2025 введена корректно? Ответ:",checkDate(2025, 11, 31)); 
+console.log("Дата 32.12.2025 введена корректно? Ответ:",checkDate(2025, 11, 32)); 
+
