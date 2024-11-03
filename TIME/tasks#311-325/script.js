@@ -222,3 +222,10 @@ now_date = new Date();
 let previousMonthDate = new Date(now_date.getFullYear(), now_date.getMonth() - 1, now_date.getDate());
 const days_of_week = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
 console.log("День недели " + previousMonthDate.toLocaleDateString() + " был " + days_of_week[previousMonthDate.getDay()]);
+
+// Задание 325 №2
+console.log('Результат задачи 325 №2:');
+now_date = new Date();
+let firstDayPreviousMonth = new Date(now_date.getFullYear(), now_date.getMonth() - 1, 1);
+const day = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+console.log("Первое число предыдущего месяца " + firstDayPreviousMonth.toLocaleDateString() + " было в/во " + day[firstDayPreviousMonth.getDay()]);
