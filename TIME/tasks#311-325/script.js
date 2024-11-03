@@ -107,3 +107,63 @@ console.log("Разница в месяцах:", monthsDiff319);
 // Задача 319 №4
 let yearsDiff319 = date319_2.getFullYear() - date319_1.getFullYear();
 console.log("Разница в годах:", yearsDiff319);
+
+// Задание 320 №1
+// let date = new Date(2018, 15, 1);
+// console.log(date);
+//JavaScript преобразует следующий момент времени: 7 марта 2018 года
+
+// Задание 320 №2
+// let date = new Date(2018, 15, 1);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 1 марта 2019 года
+
+// Задание 320 №3
+// let date = new Date(2018, 3, 31);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 31 апреля 2018 года
+
+// Задание 320 №4
+// let date = new Date(2018, 1, 31);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 1 марта 2018 года
+
+// // Задание 320 №5
+// let date = new Date(2018, 12, 33);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 2 февраля 2019
+
+// // Задание 320 №6
+// let date = new Date(2018, 33, 33);
+// console.log(date);
+//JavaScript преобразует следующий момент времени: 4 марта 2020 года
+
+// Задание 320 №7
+// let date = new Date(2018, 5, 0);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 31 мая 2018 года
+
+// Задание 320 №8
+// let date = new Date(2018, 0, 0);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 31 декабря 2017 года
+
+// Задание 320 №9
+// let date = new Date(2018, -12, -33);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 29 ноября 2016 года
+
+// Задание 320 №10
+// let date = new Date(2018, 0, 1, 23, 0, 60);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 2 января 2018 года, 0 часов
+
+// Задание 320 №11
+// let date = new Date(2018, 0, 1, 23, 60, 0);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 2 января 2018 года, 0 часов
+
+// Задание 320 №12
+// let date = new Date(2018, 0, 1, 100, 100, 100);
+// console.log(date); 
+//JavaScript преобразует следующий момент времени: 3 января 2018 года, 13:40:00
