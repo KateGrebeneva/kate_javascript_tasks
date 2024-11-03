@@ -167,3 +167,20 @@ console.log("Разница в годах:", yearsDiff319);
 // let date = new Date(2018, 0, 1, 100, 100, 100);
 // console.log(date); 
 //JavaScript преобразует следующий момент времени: 3 января 2018 года, 13:40:00
+
+
+// Задание 321 №1
+console.log('Результат задачи 318 №1:');
+function getLastDayOfMonth(year, month) {
+  return new Date(year, month, 0).getDate();
+}
+const lastDayMay2023 = getLastDayOfMonth(2023, 5); 
+console.log(lastDayMay2023);
+
+// Задание 321 №2
+console.log('Результат задачи 318 №2:');
+const lastDayMay2025 = getLastDayOfMonth(2025, 5);
+const lastDate = new Date(2025, 4, lastDayMay2025); 
+const dayOfWeek = lastDate.getDay();
+const days = ["Воскресенье", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"];
+console.log("Последний день мая 2025 года:", days[dayOfWeek]);
