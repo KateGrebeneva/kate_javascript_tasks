@@ -215,3 +215,10 @@ let date = new Date(now_date.getFullYear(), 11, 31);
 let day_week = date.getDay();
 const daysOfWeek = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
 console.log("31 декабря " + now_date.getFullYear() + " года будет день недели - " + daysOfWeek[day_week]);
+
+// Задание 325 №1
+console.log('Результат задачи 325 №1:');
+now_date = new Date();
+let previousMonthDate = new Date(now_date.getFullYear(), now_date.getMonth() - 1, now_date.getDate());
+const days_of_week = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+console.log("День недели " + previousMonthDate.toLocaleDateString() + " был " + days_of_week[previousMonthDate.getDay()]);
