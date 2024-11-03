@@ -208,3 +208,10 @@ function checkDate(year, month, day) {
 console.log("Дата 31.12.2025 введена корректно? Ответ:",checkDate(2025, 11, 31)); 
 console.log("Дата 32.12.2025 введена корректно? Ответ:",checkDate(2025, 11, 32)); 
 
+// Задание 324 №1
+console.log('Результат задачи 324 №1:');
+let now_date = new Date();
+let date = new Date(now_date.getFullYear(), 11, 31); 
+let day_week = date.getDay();
+const daysOfWeek = ["воскресенье", "понедельник", "вторник", "среда", "четверг", "пятница", "суббота"];
+console.log("31 декабря " + now_date.getFullYear() + " года будет день недели - " + daysOfWeek[day_week]);
