@@ -51,3 +51,12 @@ let startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
 differenceInMilliseconds = now - startOfDay;
 differenceInHours = differenceInMilliseconds / (1000 * 60 * 60);
 console.log('Часов, прошедших с начала дня: ' + (differenceInHours));
+
+// Задание 330 №1
+console.log('Результат задачи 330 №1:');
+now = new Date();
+// Конец текущего дня (полночь следующего дня)
+let endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
+let differenceToEndInMilliseconds = endOfDay - now;
+let differenceToEndInHours = differenceToEndInMilliseconds / (1000 * 60 * 60);
+console.log('Часов, оставшихся до конца дня: ' + (differenceToEndInHours));
