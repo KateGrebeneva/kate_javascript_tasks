@@ -149,3 +149,16 @@ while (!isLeapYear(nextLeapYear)) {
     nextLeapYear++;
 }
 console.log('Следующий високосный год: ' + (nextLeapYear));
+
+// Задание 333 №1
+console.log('Результат задачи 333 №1:');
+let date333_1 = '2020-11-31';
+let date333_2 = '2020-12-01';
+if (date333_1 > date333_2) {
+  console.log((date333_1) + ' больше,чем ' + (date333_2));
+} else if (date333_1 < date333_2) {
+  console.log((date333_1) + ' меньше,чем ' + (date333_2));
+} else {
+  console.log((date333_1) + ' равна ' + (date333_2));
+}
+
