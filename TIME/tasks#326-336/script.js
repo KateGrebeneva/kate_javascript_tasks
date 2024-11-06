@@ -173,3 +173,36 @@ if (date334_1 > date334_2) {
 } else {
   console.log((date334_1) + ' равна ' + (date334_2));
 }
+
+// Задание 335 №1
+console.log('Результат задачи 335 №1:');
+let date = '06-30'; 
+let month = parseInt(date.split('-')[0], 10); 
+let day = parseInt(date.split('-')[1], 10); 
+let zodiacSign;
+if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
+    zodiacSign = 'Водолей';
+} else if ((month === 2 && day >= 19) || (month === 3 && day <= 20)) {
+    zodiacSign = 'Рыбы';
+} else if ((month === 3 && day >= 21) || (month === 4 && day <= 19)) {
+    zodiacSign = 'Овен';
+} else if ((month === 4 && day >= 20) || (month === 5 && day <= 20)) {
+    zodiacSign = 'Телец';
+} else if ((month === 5 && day >= 21) || (month === 6 && day <= 20)) {
+    zodiacSign = 'Близнецы';
+} else if ((month === 6 && day >= 21) || (month === 7 && day <= 22)) {
+    zodiacSign = 'Рак';
+} else if ((month === 7 && day >= 23) || (month === 8 && day <= 22)) {
+    zodiacSign = 'Лев';
+} else if ((month === 8 && day >= 23) || (month === 9 && day <= 22)) {
+    zodiacSign = 'Дева';
+} else if ((month === 9 && day >= 23) || (month === 10 && day <= 22)) {
+    zodiacSign = 'Весы';
+} else if ((month === 10 && day >= 23) || (month === 11 && day <= 21)) {
+    zodiacSign = 'Скорпион';
+} else if ((month === 11 && day >= 22) || (month === 12 && day <= 21)) {
+    zodiacSign = 'Стрелец';
+} else if ((month === 12 && day >= 22) || (month === 1 && day <= 19)) {
+    zodiacSign = 'Козерог';
+}
+console.log('Знак Зодиака для даты ' + (date) + ' : ' + (zodiacSign));
