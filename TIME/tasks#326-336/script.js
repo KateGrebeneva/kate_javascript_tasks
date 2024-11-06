@@ -43,3 +43,11 @@ let noonYesterday = new Date(task328.getFullYear(), task328.getMonth(), task328.
 let differenceInMilliseconds = task328 - noonYesterday;
 let differenceInHours = differenceInMilliseconds / (1000 * 60 * 60);
 console.log('Часов, прошедших с полдня вчерашнего дня: ' + (differenceInHours));
+
+// Задание 329 №1
+console.log('Результат задачи 329 №1:');
+now = new Date();
+let startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+differenceInMilliseconds = now - startOfDay;
+differenceInHours = differenceInMilliseconds / (1000 * 60 * 60);
+console.log('Часов, прошедших с начала дня: ' + (differenceInHours));
