@@ -34,3 +34,12 @@ let startOfCurrentMonth = new Date(currentDate.getFullYear(), currentDate.getMon
 let daysBetweenCurrentAndNext = Math.floor((startOfNextMonth - startOfCurrentMonth) / (1000 * 60 * 60 * 24));
 console.log('Количество дней между 20 числом текущего месяца и 10 числом следующего: ' + (daysBetweenCurrentAndNext));
 
+// Задание 328 №1
+console.log('Результат задачи 328 №1:');
+let task328 = new Date();
+// Полдень вчерашнего дня
+let noonYesterday = new Date(task328.getFullYear(), task328.getMonth(), task328.getDate() - 1, 12);
+// Разность между текущим временем и полднем вчера
+let differenceInMilliseconds = task328 - noonYesterday;
+let differenceInHours = differenceInMilliseconds / (1000 * 60 * 60);
+console.log('Часов, прошедших с полдня вчерашнего дня: ' + (differenceInHours));
