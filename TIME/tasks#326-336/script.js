@@ -60,3 +60,18 @@ let endOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate() + 1);
 let differenceToEndInMilliseconds = endOfDay - now;
 let differenceToEndInHours = differenceToEndInMilliseconds / (1000 * 60 * 60);
 console.log('Часов, оставшихся до конца дня: ' + (differenceToEndInHours));
+
+// Задание 331 №1
+console.log('Результат задачи 331 №1:');
+now = new Date();
+let currentYear = now.getFullYear();
+let startYear = 2000;
+let weekendCount = 0;
+for (let year = startYear; year <= currentYear; year++) {
+    let date = new Date(year, 0, 1); 
+    let dayOfWeek = date.getDay(); 
+    if (dayOfWeek === 0 || dayOfWeek === 6) {
+        weekendCount++;
+}
+}
+console.log('Количество раз, когда 1 января попадало на выходной день с 2000 года до ' + (currentYear)+  ' : ' + (weekendCount));
