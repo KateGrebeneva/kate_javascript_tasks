@@ -206,3 +206,23 @@ if ((month === 1 && day >= 20) || (month === 2 && day <= 18)) {
     zodiacSign = 'Козерог';
 }
 console.log('Знак Зодиака для даты ' + (date) + ' : ' + (zodiacSign));
+
+// Задание 336 №1
+console.log('Результат задачи 336 №1:');
+currentDate = new Date();
+let noonToday = new Date(currentDate.getFullYear(), currentDate.getMonth(), currentDate.getDate(), 12, 0, 0);
+if (currentDate > noonToday) {
+    console.log("Полдень уже прошел.");
+} else {
+    console.log("Полдень еще не наступил.");
+}
+
+// Задание 336 №2
+console.log('Результат задачи 336 №2:');
+currentDate = new Date();
+let fifteenthOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 15);
+if (currentDate > fifteenthOfMonth) {
+    console.log("Половина месяца уже прошла.");
+} else {
+    console.log("Половина месяца еще не наступила.");
+}
