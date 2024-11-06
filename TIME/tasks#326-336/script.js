@@ -162,3 +162,14 @@ if (date333_1 > date333_2) {
   console.log((date333_1) + ' равна ' + (date333_2));
 }
 
+// Задание 334 №1
+console.log('Результат задачи 334 №1:');
+let date334_1 = '09-21';
+let date334_2 = '09-23';
+if (date334_1 > date334_2) {
+  console.log((date334_1) + ' больше,чем ' + (date334_2));
+} else if (date334_1 < date334_2) {
+  console.log((date334_1) + ' меньше,чем ' + (date334_2));
+} else {
+  console.log((date334_1) + ' равна ' + (date334_2));
+}
