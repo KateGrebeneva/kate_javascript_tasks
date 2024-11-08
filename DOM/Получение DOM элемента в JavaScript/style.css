@@ -1,0 +1,39 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    background-color: #e0f7fa; /* Светло-голубой фон, как зимнее небо */
+    color: #2e7d32; /* Тёмно-зелёный цвет текста */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Стили для заголовка */
+h2 {
+    text-align: center; 
+    color: #c62828; /* Красный цвет заголовка */
+    font-size: 2em; 
+    margin-bottom: 20px; 
+}
+
+/* Стили для параграфов */
+p {
+    font-size: 1.2em; 
+    line-height: 1.5; 
+    margin: 10px 0; 
+    padding: 10px; 
+    border-radius: 5px;
+    border: 2px dashed #c62828; /* Пунктирная граница красного цвета */
+    transition: background-color 0.3s ease; 
+}
+
+/* Стили для конкретных параграфов по id */
+#elem1 {
+    background-color: #ffebee; /* Светло-розовый фон для первого параграфа */
+}
+
+#elem2 {
+    background-color: #c8e6c9; /* Светло-зелёный фон для второго параграфа */
+}
+
+#elem3 {
+    background-color: #fff3e0; /* Светло-оранжевый фон для третьего параграфа */
+}
