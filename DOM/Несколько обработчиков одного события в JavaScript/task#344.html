@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #344 №1</h2>
+        <input id="button" type="submit" value="Кликни меня!">
+    
+        <h2>В поисках Немо</h2>
+        <div class="container">
+            <p id="elem">
+                «В поисках Немо» (Finding Nemo) – добрый детский анимационный фильм. 
+                Действие происходит в районе большого кораллового рифа. 
+                Красочные пейзажи, отличная графика, прорисовка самых мелких деталей передают глубины океана и их обитателей во всей красе. 
+                Но подводный мир не только прекрасен, но и опасен. 
+                Это знает рыба-клоун Марлин, ведь он потерял свою жену и почти все их потомство из-за нападения хищника. 
+                Марлин окружает заботой единственного выжившего сына Немо. 
+                Но его опека слишком давит на юного и непоседливого Немо, который только начинает познавать окружающий мир. 
+                Из-за своей неосторожности малыш оказывается вдалеке от дома. Его ждут приключения интересные и опасные. 
+                А Марлин направляется на поиске сына. По дороге он встречает множество морских обитателей, его ждет тяжелый путь, наполненный открытиями и новыми знакомствами. 
+                Марлину предстоит найти нового друга, который не только поможет в поисках Немо, но и поддержит в трудную минуту. 
+            </p>
+        </div>
+        <script>
+        function func1() {
+            console.log('1');}
+        function func2() {
+            console.log('2');}
+        function func3() {
+            console.log('3');}
+        let button = document.querySelector('#button');
+        let paragraph = document.querySelector('#elem');
+        
+        button.addEventListener('click', func1);
+        button.addEventListener('click', func2);
+        
+        paragraph.addEventListener('click', func1);
+        paragraph.addEventListener('click', func2);
+        paragraph.addEventListener('click', func3);
+        </script>
+    </body>
+</html>
