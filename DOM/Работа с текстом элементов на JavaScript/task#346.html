@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #346 №1</h2>
+        <h2>Принцесса Аврора</h2>
+
+        <p id="paragraph1">Аврора — дочь короля Стефана и королевы Лии, и до 16 лет она даже не подозревала, что является принцессой. 
+            Аврору с младенчества воспитывали в лесной избушке три феи: Флора, Фауна и Мэривеза, которые оберегали её от страшного заклятия волшебницы Малефисенты. В день своего шестнадцатилетия она находит свою любовь, но укол о веретено приводит заклятие в действие, и Аврора засыпает глубоким сном. 
+            Снять заклятие сможет только поцелуй истинной любви, который сможет подарить ей принц Филипп, прибывший в эти края на поиски своего счастья.
+        </p>
+        <button id="button1">Нажми,чтобы вывести в консоль!</button>
+        
+        <h2>Task #346 №2</h2>
+        <p id="paragraph2">Принцесса — добрая, элегантная, скромная и интеллигентная девушка, а также безнадёжный романтик. 
+            Сперва, она показана слегка наивной и беззаботной. 
+            Аврора очень предана своим «тётушкам» и часто подчиняется их правилам с уважением, хотя она может быть и не согласна с ними. 
+            Поскольку она никогда не общалась с незнакомцами, Аврора, естественно, была удивлена и напугана появлению принца Филлипа в лесу. 
+            В последующих появлениях, Аврора становится более самоуверенной, независимой и твёрдой в своих решениях и способностях.
+        </p>
+        
+        <button id="button2">Нажми,чтобы изменить текст</button>
+        
+        <h2>Task #346 №3</h2>
+        <p id="number1">5</p>
+        <p id="number2">10</p>
+        <button id="button3">Вывести сумму чисел</button>
+        
+        <h2>Task #346 №4</h2>
+        <div id="result"></div>
+        <button id="button4">Нажми,чтобы записать сумму!</button>
+    
+        <h2>Task #346 №5</h2>
+        <p id="increment">1</p>
+        <button id="button5">Нажми,чтобы прибавить 1!</button>
+    
+        <h2>Task #346 №6</h2>
+        <p id="exclamation">Принцесса Аврора прекрасна</p>
+        <button id="button6">Добавить восклицательный знак</button>
+       
+        <script>
+        // Задание 346 №1: Вывод текста абзаца в консоль
+        document.getElementById('button1').addEventListener('click', function() {
+            let elem = document.querySelector('#paragraph1');
+            console.log(elem.textContent);});
+            
+         // Задание 346 №2: Изменение текста абзаца
+        document.getElementById('button2').addEventListener('click', function() {
+            let elem = document.querySelector('#paragraph2');
+            elem.textContent = 'Знаменитый вальс Авроры и Филлипа был использован в 1991 году в анимационной ленте Диснея «Красавица и Чудовище».';});
+            
+        // Задание 346 №3: Вывод суммы чисел из двух абзацев
+        document.getElementById('button3').addEventListener('click', function() {
+            let num1 = parseInt(document.querySelector('#number1').textContent);
+            let num2 = parseInt(document.querySelector('#number2').textContent);
+            let sum = num1 + num2;
+            alert('Сумма чисел: ' + sum);});
+            
+        // Задание 346 №4: Запись суммы чисел в див
+        document.getElementById('button4').addEventListener('click', function() {
+            let num1 = parseInt(document.querySelector('#number1').textContent);
+            let num2 = parseInt(document.querySelector('#number2').textContent);
+            let sum = num1 + num2;    
+            document.getElementById('result').textContent = 'Сумма чисел: ' + sum;});
+            
+        // Задание 346 №5: Прибавление единицы к числу в абзаце
+        document.getElementById('button5').addEventListener('click', function() {
+            let elem = document.querySelector('#increment');
+            let currentValue = parseInt(elem.textContent);
+            currentValue += 1;
+            elem.textContent = currentValue;});
+            
+        // Задание 346 №6: Добавление восклицательного знака к тексту абзаца
+        document.getElementById('button6').addEventListener('click', function() {
+            let elem = document.querySelector('#exclamation');
+            elem.textContent += '!'; });
+        </script>
+    </body>
+</html>
