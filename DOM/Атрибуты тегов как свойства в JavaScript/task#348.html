@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #348 №1</h2>  
+        <input id="elem1" type="email">
+        <button onclick="showType()">Показать type</button>
+        <p id="output1"></p>
+    
+        <h2>Task #348 №2</h2>  
+        <input id="elem2" type="email">
+        <button onclick="setType()">Установить type на submit</button>
+    
+        <h2>Task #348 №3</h2> 
+        <a id="link" href="https://example.com">Ссылка</a>
+        <button onclick="showHref()">Показать href</button>
+        <p id="output2"></p>
+    
+        <h2>Task #348 №4</h2> 
+        <button onclick="appendHref()">Добавить href к тексту ссылки</button>
+    
+        <h2>Task #348 №5</h2> 
+        <img id="image" src="https://i.pinimg.com/564x/cd/13/7e/cd137e48ab7b0273b2cdcd94e28668f9.jpg" alt="flora">
+        <button onclick="showSrc()">Показать путь к картинке</button>
+        <p id="output3"></p>
+    
+        <h2>Task #348 №6</h2> 
+        <button onclick="setWidth()">Установить ширину 300</button>
+    
+        <h2>Task #348 №7</h2> 
+        <button onclick="increaseWidth()">Увеличить ширину в 2 раза</button>
+    
+        <h2>Task #348 №8</h2> 
+        <img id="imageChange" src="" alt="Изменяемая картинка">
+        <button onclick="changeImage1()">Картинка 1</button>
+        <button onclick="changeImage2()">Картинка 2</button>
+        
+        <script>
+            // Задание 1
+            function showType() {
+                let elem = document.querySelector('#elem1');
+                document.getElementById('output1').textContent = elem.type;
+            }
+    
+            // Задание 2
+            function setType() {
+                let elem = document.querySelector('#elem2');
+                elem.type = 'submit';
+            }
+    
+            // Задание 3
+            function showHref() {
+                let link = document.querySelector('#link');
+                document.getElementById('output2').textContent = link.href;
+            }
+    
+            // Задание 4
+            function appendHref() {
+                let link = document.querySelector('#link');
+                link.textContent +=  (`: ` + `${link.href}`);
+            }
+    
+            // Задание 5
+            function showSrc() {
+                let image = document.querySelector('#image');
+                document.getElementById('output3').textContent = image.src;
+            }
+    
+            // Задание 6
+            function setWidth() {
+                let image = document.querySelector('#image');
+                image.width = 300;
+            }
+    
+            // Задание 7
+            function increaseWidth() {
+                let image = document.querySelector('#image');
+                image.width *= 2;
+            }
+    
+            // Задание 8
+            function changeImage1() {
+                let imageChange = document.querySelector('#imageChange');
+                imageChange.src = 'https://i.pinimg.com/564x/37/12/40/3712401a4cff22a7ca27443dc9f87ab9.jpg';
+            }
+    
+            function changeImage2() {
+                let imageChange = document.querySelector('#imageChange');
+                imageChange.src = 'https://i.pinimg.com/736x/c6/c9/e0/c6c9e047c7919e3f514e4b2b4662511c.jpg';
+            }
+        </script>
+    </body>
+</html>
