@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+        <div class="container">
+            <h2>Task #352 №1</h2>
+            <input id="elem" value="text" class="input-field">
+            <button id="showValueButton" class="button">Показать значение input</button>
+            <img id="image" src="https://i.pinimg.com/564x/27/f7/46/27f746245db5125609ea1f45ef18d8f2.jpg" alt="Avatar" class="image">
+            <button id="showImageSrcButton" class="button">Показать источник изображения</button>
+        </div>
+
+        <script> 
+            document.getElementById('showValueButton').addEventListener('click', function() {
+                alert('Значение input: ' + (document.querySelector('#elem').value)); 
+            });
+        
+            document.getElementById('showImageSrcButton').addEventListener('click', function() {
+                alert('Источник изображения: ' + (document.querySelector('#image').src)); 
+            });
+        </script>
+    </body>
+</html>
