@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+        <h2>Task #351 №1</h2>
+        <div id="task1" class="content no-gap">
+            <button id="btn1">Показать классы</button>
+            <div id="output1"></div>
+        </div>
+    
+        <h2>Task #351 №2</h2>
+        <div id="task2">
+            <button id="btn2">Добавить класс</button>
+            <div id="output2"></div>
+        </div>
+    
+        <h2>Task #351 №3</h2>
+        <div id="task3">
+            <div id="elem" class="aaa bbb ccc"></div>
+            <button id="btn3">Получить массив классов</button>
+            <div id="output3"></div>
+        </div>
+    
+        <script>
+        // Задание 1
+            document.getElementById('btn1').addEventListener('click', function() {
+                let elem = document.querySelector('#task1');
+                document.getElementById('output1').innerText = elem.className; 
+            });
+            
+        // Задание 2
+           document.getElementById('btn2').addEventListener('click', function() {
+            let elem = document.querySelector('#task2');
+            elem.className = "katushka"; // записываем новый класс
+            document.getElementById('output2').innerText = elem.className;
+});
+
+
+        
+        // Задание 3
+            document.getElementById('btn3').addEventListener('click', function() {
+                let elem = document.querySelector('#elem');
+                let classesArray = elem.className.split(' '); 
+                document.getElementById('output3').innerText = classesArray.join(', ');
+            });
+        </script>
+    </body>
+</html>
