@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+        <div class="container">
+        <h2>Task #353 №1</h2>
+        <p>Не смотря на то, что цепочки сокращают код, в большинстве случаев введение переменной все-таки удобнее.</p>
+        
+        <img id="image" src="https://i.pinimg.com/564x/fe/6c/5c/fe6c5c20d41b42f773dec008dfead6ce.jpg" width="400" height="400" alt="cat" class="image">
+        
+        <button id="showImageInfoButton" class="button">Показать информацию об изображении</button>
+        
+        <div id="imageInfo" class="info"></div>
+    </div>
+
+        <script> 
+        const imgElem = document.querySelector('#image');
+        
+        document.getElementById('showImageInfoButton').addEventListener('click', function() {
+            const info = 
+            'Source: ' + imgElem.src + '<br>' +
+            'Width: ' + imgElem.width + ' px<br>' +
+            'Height: ' + imgElem.height + ' px';
+            document.getElementById('imageInfo').innerHTML = info;});
+        </script>
+    </body>
+</html>
