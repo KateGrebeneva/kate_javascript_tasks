@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+        <div class="container">
+            <h2>Task #350</h2> 
+            <input id="input1" value="text" placeholder="Кликните для фокуса">
+            <input id="input2" type="number" placeholder="Введите число">
+            <input id="input3" value="Очистите меня!" placeholder="Кликните для очистки">
+        </div>
+    
+        <script>
+        // Задание 1
+            let input1 = document.querySelector('#input1');
+            input1.addEventListener('focus', function() {
+                input1.value = '1';
+            });
+            input1.addEventListener('blur', function() {
+                input1.value = '2';
+            });
+            
+        // Задание 2
+            let input2 = document.querySelector('#input2');
+            input2.addEventListener('blur', function() {
+                let number = parseFloat(input2.value);
+                if (!isNaN(number)) {
+                    alert('Квадрат числа: ' + (number * number));
+                } else {
+                    alert('Пожалуйста, введите корректное число.');
+                }
+            });
+            
+        // Задание 3
+            let input3 = document.querySelector('#input3');
+            input3.addEventListener('focus', function() {
+                input3.value = '';
+            }); 
+        </script>
+    </body>
+</html>
