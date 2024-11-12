@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+        <div class="container">
+            <h2>Task #354 №1-2</h2> 
+            <label for="elem">Введите текст:</label>
+            <input id="elem" value="text">
+            <button id="incrementButton">1</button>
+        </div>
+    
+        <script>
+            let elem = document.querySelector('#elem');
+    
+            elem.addEventListener('focus', function() {
+                this.value = '1';
+            });
+    
+            elem.addEventListener('blur', function() {
+                this.value = '2';
+            });
+    
+            let incrementButton = document.querySelector('#incrementButton');
+            incrementButton.addEventListener('click', function() {
+                this.textContent = parseInt(this.textContent) + 1;
+            });
+        </script>
+    </body>
+</html>
