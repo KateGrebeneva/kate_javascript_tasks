@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+    <div class="container">
+        <div class="task">
+            <h2>Task #359 №1</h2>
+            <a id="link" href="https://www.kinopoisk.ru/film/54465/">Ссылка:</a>
+            <input id="button1" type="button" value="Добавить ссылку">
+        </div>
+
+        <div class="task">
+            <h2>Task #359 №2</h2>
+            <input id="button2" type="button" value="1">
+        </div>
+    </div>
+
+    <script>
+        // Задание 1
+        let link = document.querySelector('#link');
+        let button1 = document.querySelector('#button1');
+
+        button1.addEventListener('click', function func() {
+            link.textContent +=  [link.getAttribute('href')];
+            this.removeEventListener('click', func);
+        });
+
+        // Задание 2
+        let button2 = document.querySelector('#button2');
+
+        button2.addEventListener('click', function increment() {
+            let currentValue = parseInt(this.value);
+            if (currentValue < 10) {
+                this.value = currentValue + 1;
+            } else {
+                this.removeEventListener('click', increment);
+            }
+        });
+    </script>
+    </body>
+</html>
