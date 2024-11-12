@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+        <div class="container">
+        <h2>Task #355 №1</h2>
+        <div class="paragraphs">
+            <p>Сказка о любви</p>
+            <p>Сладкая как сон</p>
+            <p>Этот старый вальс</p>
+            <p>Но звучит для вас</p>
+            <p>Как впервые он</p>
+        </div>
+
+        <h2>Task #355 №2</h2>
+        <div class="inputs">
+            <input id="input1" type="number" placeholder="Введите число 1">
+            <input id="input2" type="number" placeholder="Введите число 2">
+            <input id="input3" type="number" placeholder="Введите число 3">
+        </div>
+    </div>
+
+    <script>
+        // Обработчик для абзацев
+        const paragraphs = document.querySelectorAll('.paragraphs p');
+        paragraphs.forEach(paragraph => {
+            paragraph.addEventListener('click', function() {
+                this.textContent += '!';
+            });
+        });
+
+        // Обработчик для инпутов
+        const inputs = document.querySelectorAll('.inputs input');
+        inputs.forEach(input => {
+            input.addEventListener('blur', function() {
+                this.value = Math.pow(this.value, 2);
+            });
+        });
+    </script>
+    </body>
+</html>
