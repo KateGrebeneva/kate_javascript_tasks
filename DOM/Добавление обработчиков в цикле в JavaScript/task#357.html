@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+    <div class="container">
+        <h2>Task #357 №1</h2>
+        <input type="number" placeholder="Введите число" class="number-input">
+        <input type="number" placeholder="Введите число" class="number-input">
+        <input type="number" placeholder="Введите число" class="number-input">
+
+        <h2>Task #357 №2</h2>
+        <div class="numbers">
+            <p>2</p>
+            <p>3</p>
+            <p>4</p>
+        </div>
+    </div>
+
+    <script>
+        // Задание 1: Обработчик потери фокуса для инпутов
+        let inputs = document.querySelectorAll('.number-input');
+        for (let input of inputs) {
+            input.addEventListener('blur', function() {
+                this.value = Number(this.value) + 1;
+            });
+        }
+
+        // Задание 2: Возведение числа в квадрат по клику
+        let numberElems = document.querySelectorAll('.numbers p');
+        for (let numberElem of numberElems) {
+            numberElem.addEventListener('click', function() {
+                let number = Number(this.textContent);
+                this.textContent = number * number; // возводим в квадрат
+            });
+        }
+    </script>
+    </body>
+</html>
