@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffe0b2; /* Светлый персиковый фон */
+    color: #6d4c41; /* Темный цвет текста */
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffccbc; /* Более насыщенный персиковый цвет */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #3e2723; /* Темно-коричневый заголовок */
+}
+
+.numbers div {
+    margin: 10px 0;
+    padding: 15px;
+    background-color: #ffab91; /* Цвет фона для div */
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.numbers div:hover {
+    background-color: #ff8a65; /* Цвет при наведении */
+}
+
+p {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #ffe0b2; /* Цвет фона для абзацев */
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+p:hover {
+    background-color: #ffcc80; /* Цвет при наведении на абзацы */
+}

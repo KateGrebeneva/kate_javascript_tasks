@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+    <div class="container">
+        <h2>Task #358 №1</h2>
+        <div class="numbers">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </div>
+
+        <h2>Кликните на числа!</h2>
+        
+        <h2>Абзацы для клика</h2>
+        <p>Нельзя просить у звезды исполнить желание и при этом ничего не предпринимать.</p>
+        <p>Ты не должен никому позволять загонять себя в рамки. Единственные твои рамки – твоя душа.</p>
+        <p>Даже для чудес необходимо немного времени.</p>
+    </div>
+
+    <script>
+        // Анонимные обработчики для div элементов
+        let divs = document.querySelectorAll('.numbers div');
+
+        for (let div of divs) {
+            div.addEventListener('click', function() {
+                this.textContent++; // увеличиваем текстовое содержимое на 1
+            });
+        }
+
+        let paragraphs = document.querySelectorAll('p');
+
+        for (let paragraph of paragraphs) {
+            paragraph.addEventListener('click', function() {
+                console.log(this.textContent); // выводим текст абзаца в консоль
+            });
+        }
+    </script>
+    </body>
+</html>
