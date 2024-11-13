@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+    <div class="container">
+        <h2>Task #360 №1</h2>
+        <h2>Кликни на абзац!</h2>
+        <p>За окном уже сугробы</p>
+        <p>Снеговик нас ждёт давно</p>
+        <p>Но не вижусь я с тобой теперь</p>
+        <p>Открой же дверь, мне важно лишь одно</p>
+        <p>Ведь мы с тобой подружки</p>
+    </div>
+
+    <script>
+        let elems = document.querySelectorAll('p');
+
+        for (let elem of elems) {
+            elem.addEventListener('click', func);
+        }
+
+        function func() {
+            this.textContent += '!'; // Добавляю восклицательный знак
+            this.removeEventListener('click', func); // отвязываю обработчик
+        }
+    </script>
+            
+    </body>
+</html>
