@@ -1,0 +1,25 @@
+body {
+    background-color: #ffe5d4; 
+    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+p {
+    font-size: 24px; 
+    line-height: 1.6;
+    margin: 20px 0;
+    padding: 15px;
+    background-color: #ffccbc; 
+    border-radius: 5px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+}
+
+p:hover {
+    background-color: #ffab91; 
+}
+
+h2 {
+    color: #d88a6b; 
+}
+
