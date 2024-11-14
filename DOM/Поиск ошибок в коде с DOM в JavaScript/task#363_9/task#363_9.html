@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+      <h2>Task #363 №9</h2>
+        <input id="inp1" type="number">
+        <input id="inp2" type="number">
+        <button id="btn">click</button>
+        <h2>Сумма первых 2 input:</h2>
+        <input id="inp3" type="text" readonly>
+
+        <script>
+          let btn = document.querySelector('#btn');
+          let inp1 = document.querySelector('#inp1');
+          let inp2 = document.querySelector('#inp2');
+          let inp3 = document.querySelector('#inp3');
+          
+          btn.addEventListener('click', function() {
+            inp3.value = Number(inp1.value) + Number(inp2.value);
+          });
+        </script>
+    </body>
+</html>
