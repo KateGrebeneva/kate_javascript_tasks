@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #363 №7</h2> 
+        <p>1</p>
+        <p>2</p>
+        <p>3</p>
+        <button id="sumConsoleButton">Click!</button>
+        
+        <script>
+        let sumConsoleButton = document.querySelector('#sumConsoleButton');
+            let elems7 = document.querySelectorAll('p');
+    
+            sumConsoleButton.addEventListener('click', function() {
+                let sum = 0;
+                elems7.forEach(elem => {
+                    sum += Number(elem.textContent);
+                });
+                console.log(sum);
+            });
+        </script>
+    </body>
+</html>
