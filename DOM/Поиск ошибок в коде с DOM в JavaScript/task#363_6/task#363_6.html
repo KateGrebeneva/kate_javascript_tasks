@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #363 №6</h2> 
+        <p>Barbie in the Nutcracker</p>
+        <p>Barbie as Rapunzel</p>
+        <p>Barbie of Swan Lake</p>
+        <button>Click!</button>
+        
+        <script>
+        let button = document.querySelector('button');
+        let elems = document.querySelectorAll('p');
+        
+        button.addEventListener('click', function() {
+            for (let elem of elems) {
+                elem.innerHTML = '<b>' + elem.textContent + '</b>'; 
+            }
+        });
+        </script>
+    </body>
+</html>

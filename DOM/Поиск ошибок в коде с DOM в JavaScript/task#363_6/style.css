@@ -16,6 +16,21 @@ p {
     transition: background-color 0.3s; 
 }
 
+button {
+    font-size: 20px; 
+    margin-top: 20px;
+    padding: 20px 25px;
+    color:#e13800;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffcc99;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb366;
+}
+
 h2 {
     color: #d88a6b; 
 }

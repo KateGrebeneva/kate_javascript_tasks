@@ -6,21 +6,19 @@
         <link rel="stylesheet" href="style.css">
 	</head>
     <body>
-        <h2>Task #363 №5</h2> 
-        <p>Barbie in the Nutcracker</p>
-        <p>Barbie as Rapunzel</p>
-        <p>Barbie of Swan Lake</p>
-        <button>Click!</button>
+        <h2>Task #363 №5</h2>
+        <p>Princess Odette</p>
+        <p>Princess Annika</p>
+        <p>Princess Brietta</p>
         
         <script>
-        let button = document.querySelector('button');
         let elems = document.querySelectorAll('p');
         
-        button.addEventListener('click', function() {
-            for (let elem of elems) {
-                elem.innerHTML = '<b>' + elem.textContent + '</b>'; 
-            }
-        });
+            elems.forEach(elem => {
+                elem.addEventListener('click', () => {
+                    elem.textContent += '!';
+                });
+            });
         </script>
     </body>
 </html>
