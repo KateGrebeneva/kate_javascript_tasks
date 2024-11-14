@@ -14,13 +14,13 @@
         
         <script>
         let button = document.querySelector('button');
-        let elems = document.querySelectorAll('p'); // Исправлено с querySelector на querySelectorAll
+        let elems = document.querySelectorAll('p'); // использую с querySelector на querySelectorAll
         
         button.addEventListener('click', function() {
             let sum = 0;
             
             for (let elem of elems) {
-                sum += Number(elem.textContent); // Исправлено: используем elem.textContent вместо elems.textContent
+                sum += Number(elem.textContent); // использую elem.textContent вместо elems.textContent
             }
             
             console.log('Сумма чисел из абзацев: ' + (sum));
