@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+      <h2>Task #363 №11</h2> 
+      <input data-text="text1">
+      <input data-text="text2">
+      <input data-text="text3">
+      <button id="btn">click</button>
+      
+      <script>
+      let inputs = document.querySelectorAll('input');
+      let button = document.querySelector('#btn'); // Исправлено: исправлено на правильный ID
+      
+      button.addEventListener('click', function() {
+          for (let input of inputs) {
+              if (input.value === input.dataset.text) { // Исправлено: используем input.dataset.text
+                  input.classList.add('right');
+              } else {
+                  input.classList.add('wrong');
+              }
+          }
+      });
+      </script>
+      
+    </body>
+</html>

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff5e6; 
+    font-size: medium;
+}
+
+input[type="number"], input[type="text"] {
+    border: 2px solid #ffcc99; 
+    border-radius: 15px;
+    padding: 20px;
+    margin: 15px;
+    width: calc(100% - 22px);
+    color:#db6e43; 
+}
+
+h2 {
+    color: #d88a6b; 
+}
+
+button {
+    font-size: 17px; 
+    margin-top: 17px;
+    padding: 17px 22px;
+    color:#e13800;
+    border: none;
+    border-radius: 12px;
+    background-color: #ffcc99;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffb366; 
+}
+
+.right {
+     border: 2px solid #66cc66; /* зелёная рамка для правильных ответов */
+}
+    
+.wrong {
+    border: 2px solid #cc6666; /* красная рамка для неправильных ответов */
+}
+    
+
+
+
