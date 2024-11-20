@@ -52,6 +52,11 @@
             <p id="output7">Количество слов: </p>
         </div>
 
+        <h2>Task #364 №8</h2>
+        <div>
+            <input id="input8" type="text" placeholder="Введите: 31.12.2016">
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -101,6 +106,16 @@
             const wordCount = this.value.trim().split(/\s+/).length;
             document.getElementById('output7').innerText = 'Количество слов: ' + wordCount;
         });
+
+        // Задание 8
+        document.getElementById('input8').addEventListener('blur', function() {
+            const dateParts = this.value.split('.');
+            if (dateParts.length === 3) {
+                const formattedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
+                this.value = formattedDate;
+            }
+        });
+
         </script>
     </body>
 </html>
