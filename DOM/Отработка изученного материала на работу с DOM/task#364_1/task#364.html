@@ -21,12 +21,19 @@
             <p id="output2">Сумма: </p>
         </div>
 
+        <h2>Task #364 №3</h2>
+        <div>
+            <input id="input3" type="number" placeholder="Введите число">
+            <p id="output3">Сумма цифр этого числа: </p>
+        </div>
+
         <script>
         // Задание 1
-            document.getElementById('input1').addEventListener('blur', function() {
-                const output = document.getElementById('output1');
-                output.innerText += this.value + ' ';
-            });
+        document.getElementById('input1').addEventListener('blur', function() {
+            const output = document.getElementById('output1');
+            output.innerText += this.value + ' ';
+        });
+
         // Задание 2
         function calculateSum() {
             const num1 = parseFloat(document.getElementById('input2_1').value) || 0;
@@ -37,6 +44,11 @@
             document.getElementById('output2').innerText = 'Сумма: ' + sum;
         } 
     
+        // Задание 3
+        document.getElementById('input3').addEventListener('blur', function() {
+            const sumOfDigits = this.value.split('').reduce((acc, digit) => acc + Number(digit), 0);
+            document.getElementById('output3').innerText = 'Сумма цифр этого числа: ' + sumOfDigits;
+        });
         </script>
     </body>
 </html>
