@@ -33,6 +33,13 @@
             <p id="output4">Среднее арифметическое: </p>
         </div>
 
+        <h2>Task #364 №5</h2>
+        <div>
+            <input id="input5" type="text" placeholder="Введите ФИО через пробел">
+            <input id="surname" type="text" placeholder="Фамилия">
+            <input id="name" type="text" placeholder="Имя">
+            <input id="patronymic" type="text" placeholder="Отчество">
+        </div>
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -61,6 +68,14 @@
             const numbers = this.value.split(',').map(Number);
             const average = numbers.reduce((acc, num) => acc + num, 0) / numbers.length;
             document.getElementById('output4').innerText = 'Среднее арифметическое: ' + average;
+        });
+
+        // Задание 5
+        document.getElementById('input5').addEventListener('blur', function() {
+            const [surname, name, patronymic] = this.value.split(' ');
+            document.getElementById('surname').value = surname || '';
+            document.getElementById('name').value = name || '';
+            document.getElementById('patronymic').value = patronymic || '';
         });
         </script>
     </body>
