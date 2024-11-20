@@ -98,6 +98,12 @@
             <p class="num-paragraph">4</p>
         </div>
 
+        <h2>Task #364 №15</h2>
+        <div>
+            <input id="input15" type="text" placeholder="31.12.2016">
+            <p id="output15"></p>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -200,6 +206,12 @@
             });
         });
 
+        // Задание 15
+        document.getElementById('input15').addEventListener('blur', function() {
+            const date = new Date(this.value.split('.').reverse().join('-'));
+            const daysOfWeek = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
+            document.getElementById('output15').innerText = daysOfWeek[date.getDay()];
+        });
         </script>
     </body>
 </html>
