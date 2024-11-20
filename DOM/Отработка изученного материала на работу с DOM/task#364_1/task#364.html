@@ -57,6 +57,47 @@
             <input id="input8" type="text" placeholder="Введите: 31.12.2016">
         </div>
 
+        <h2>Task #364 №9</h2>
+        <div>
+            <input id="input9" type="text" placeholder="Введите слово">
+            <button onclick="checkPalindrome()">Проверить</button>
+            <p id="output9"></p>
+        </div>
+    
+        <h2>Task #364 №10</h2>
+        <div>
+            <input id="input10" type="number" placeholder="Введите число">
+            <p id="output10"></p>
+        </div>
+    
+        <h2>Task #364 №11</h2>
+        <div>
+            <p class="paragraph">Абзац 1</p>
+            <p class="paragraph">Абзац 2</p>
+            <button onclick="addParagraphNumbers()">Добавить номера</button>
+        </div>
+    
+        <h2>Task #364 №12</h2>
+        <div>
+            <a href="https://losyash-library.fandom.com/ru/wiki/Ёжик">Ёжик</a>
+            <a href="https://losyash-library.fandom.com/ru/wiki/%D0%9A%D1%80%D0%BE%D1%88">Крош</a>
+            <button onclick="addHrefToLinks()">Добавить href</button>
+        </div>
+    
+        <h2>Task #364 №13</h2>
+        <div>
+            <a href="https://losyash-library.fandom.com/ru/wiki/Ёжик">Ёжик</a>
+            <a href="https://losyash-library.fandom.com/ru/wiki/%D0%9A%D1%80%D0%BE%D1%88">Крош</a>
+            <button onclick="addArrowToHttpLinks()">Добавить стрелку</button>
+        </div>
+    
+        <h2>Task #364 №14</h2>
+        <div>
+            <p class="num-paragraph">2</p>
+            <p class="num-paragraph">3</p>
+            <p class="num-paragraph">4</p>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -114,6 +155,49 @@
                 const formattedDate = `${dateParts[2]}-${dateParts[1]}-${dateParts[0]}`;
                 this.value = formattedDate;
             }
+        });
+
+        // Задание 9
+        function checkPalindrome() {
+            const word = document.getElementById('input9').value;
+            const isPalindrome = word === word.split('').reverse().join('');
+            document.getElementById('output9').innerText = isPalindrome ? 'Слово является палиндромом' : 'Слово не является палиндромом';
+        }
+        // Задание 10
+        document.getElementById('input10').addEventListener('blur', function() {
+            const containsThree = this.value.toString().includes('3');
+             document.getElementById('output10').innerText = containsThree ? 'Число содержит цифру 3' : 'Число не содержит цифру 3';
+            });
+        // Задание 11
+        function addParagraphNumbers() {
+            const paragraphs = document.querySelectorAll('.paragraph');
+            paragraphs.forEach((paragraph, index) => {
+                paragraph.innerText +=  (`Порядковый номер: ${index + 1}`);
+            });
+        }
+            
+        // Задание 12
+        function addHrefToLinks() {
+            const links = document.querySelectorAll('a');
+            links.forEach(link => {
+                link.innerText +=  (`${link.href}`);
+            });
+        }
+            
+        // Задание 13
+        function addArrowToHttpLinks() {
+            const links = document.querySelectorAll('a[href^="https://"]');
+            links.forEach(link => {
+                link.innerText += ' →';
+            });
+        }
+            
+        // Задание 14
+        document.querySelectorAll('.num-paragraph').forEach(paragraph => {
+            paragraph.addEventListener('click', function() {
+                const number = parseInt(this.innerText);
+                this.innerText +=  (` Квадрат числа: ${number * number}`);
+            });
         });
 
         </script>
