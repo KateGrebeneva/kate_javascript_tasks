@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f0f8;
+}
+
+h2 {
+    color: #d5006d;
+}
+
+div {
+    margin: 20px;
+}
+
+input[type=text],
+input[type=number] {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+button {
+    padding: 10px;
+    background-color: #d5006d;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #c7005c;
+}
+
+.paragraph,
+.num-paragraph {
+    margin: 10px 0;
+}
+
+.text-div {
+    margin: 10px 0;
+}

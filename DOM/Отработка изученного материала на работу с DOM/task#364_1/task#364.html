@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body> 
+        <h2>Task #364 №1</h2>
+        <div>
+            <input id="input1" type="text" placeholder="Введите текст">
+            <p id="output1">Текст: </p>
+        </div>
+    
+        <script>
+        // Задание 1
+            document.getElementById('input1').addEventListener('blur', function() {
+                const output = document.getElementById('output1');
+                output.innerText += this.value + ' ';
+            });
+            
+        </script>
+    </body>
+</html>
