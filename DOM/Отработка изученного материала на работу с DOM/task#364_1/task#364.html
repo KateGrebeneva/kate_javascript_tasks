@@ -27,6 +27,12 @@
             <p id="output3">Сумма цифр этого числа: </p>
         </div>
 
+        <h2>Task #364 №4</h2>
+        <div>
+            <input id="input4" type="text" placeholder="Введите числа через запятую">
+            <p id="output4">Среднее арифметическое: </p>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -48,6 +54,13 @@
         document.getElementById('input3').addEventListener('blur', function() {
             const sumOfDigits = this.value.split('').reduce((acc, digit) => acc + Number(digit), 0);
             document.getElementById('output3').innerText = 'Сумма цифр этого числа: ' + sumOfDigits;
+        });
+
+        // Задание 4
+        document.getElementById('input4').addEventListener('blur', function() {
+            const numbers = this.value.split(',').map(Number);
+            const average = numbers.reduce((acc, num) => acc + num, 0) / numbers.length;
+            document.getElementById('output4').innerText = 'Среднее арифметическое: ' + average;
         });
         </script>
     </body>
