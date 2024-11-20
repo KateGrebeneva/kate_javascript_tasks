@@ -40,6 +40,12 @@
             <input id="name" type="text" placeholder="Имя">
             <input id="patronymic" type="text" placeholder="Отчество">
         </div>
+
+        <h2>Task #364 №6</h2>
+        <div>
+            <input id="input6" type="text" placeholder="Введите ФИО строчными буквами">
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -76,6 +82,12 @@
             document.getElementById('surname').value = surname || '';
             document.getElementById('name').value = name || '';
             document.getElementById('patronymic').value = patronymic || '';
+        });
+
+        // Задание 6
+        document.getElementById('input6').addEventListener('blur', function() {
+            const names = this.value.split(' ').map(name => name.charAt(0).toUpperCase() + name.slice(1)).join(' ');
+            this.value = names;
         });
         </script>
     </body>
