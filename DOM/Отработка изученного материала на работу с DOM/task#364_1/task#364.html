@@ -46,6 +46,12 @@
             <input id="input6" type="text" placeholder="Введите ФИО строчными буквами">
         </div>
 
+        <h2>Task #364 №7</h2>
+        <div>
+            <input id="input7" type="text" placeholder="Введите текст">
+            <p id="output7">Количество слов: </p>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -88,6 +94,12 @@
         document.getElementById('input6').addEventListener('blur', function() {
             const names = this.value.split(' ').map(name => name.charAt(0).toUpperCase() + name.slice(1)).join(' ');
             this.value = names;
+        });
+
+        // Задание 7
+        document.getElementById('input7').addEventListener('blur', function() {
+            const wordCount = this.value.trim().split(/\s+/).length;
+            document.getElementById('output7').innerText = 'Количество слов: ' + wordCount;
         });
         </script>
     </body>
