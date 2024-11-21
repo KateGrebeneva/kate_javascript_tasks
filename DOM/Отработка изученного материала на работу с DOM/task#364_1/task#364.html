@@ -118,6 +118,10 @@
             <input id="clickCountInput" type="text" value="0">
         </div>
 
+        <h2>Task #364 №18</h2>
+        <div class="text-div">Это длинный текст, который мы обрежем.</div>
+        <div class="text-div">Еще один текст для обрезки.</div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -246,6 +250,11 @@
                 clickCount++;
                 document.getElementById('clickCountInput').value = clickCount;
             });
+        });
+
+        // Задание 18
+        document.querySelectorAll('.text-div').forEach(div => {
+            div.innerText = div.innerText.substring(0, 10) + '...';
         });
         </script>
     </body>
