@@ -134,6 +134,13 @@
             <button onclick="shuffleString()">Перемешать строку</button>
         </div>
 
+        <h2>Task #364 №21</h2>
+        <div>
+            <input id="fahrenheitInput" type="number">
+            <button onclick="convertToCelsius()">Конвертировать в Цельсий</button>
+            <p id="celsiusOutput"></p>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -284,6 +291,13 @@
                 [str[i], str[j]] = [str[j], str[i]];
             }
             inputField.value = str.join('');
+        }
+
+        // Задание 21
+        function convertToCelsius() {
+            const fahrenheit = parseFloat(document.getElementById('fahrenheitInput').value);
+            const celsius = (fahrenheit - 32) * (5 / 9);
+            document.getElementById('celsiusOutput').innerText = `Температура в Цельсии: ${celsius.toFixed(2)}°C`;
         }
         </script>
     </body>
