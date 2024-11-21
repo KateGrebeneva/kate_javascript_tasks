@@ -141,6 +141,13 @@
             <p id="celsiusOutput"></p>
         </div>
 
+        <h2>Task #364 №22</h2>
+        <div>
+            <input id="factorialInput" type="number">
+            <button onclick="calculateFactorial()">Посчитать факториал</button>
+            <p id="factorialOutput"></p>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -298,6 +305,16 @@
             const fahrenheit = parseFloat(document.getElementById('fahrenheitInput').value);
             const celsius = (fahrenheit - 32) * (5 / 9);
             document.getElementById('celsiusOutput').innerText = `Температура в Цельсии: ${celsius.toFixed(2)}°C`;
+        }
+
+        // Задание 22
+        function calculateFactorial() {
+            const number = parseInt(document.getElementById('factorialInput').value);
+            let factorial = 1;
+            for (let i = 1; i <= number; i++) {
+                factorial *= i;
+            }
+            document.getElementById('factorialOutput').innerText = `Факториал: ${factorial}`;
         }
         </script>
     </body>
