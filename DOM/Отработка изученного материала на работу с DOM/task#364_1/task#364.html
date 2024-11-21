@@ -128,6 +128,12 @@
             <button onclick="generateRandomString()">Сгенерировать строку</button>
         </div>
     
+        <h2>Task #364 №20</h2>
+        <div>
+            <input id="shuffleInput" type="text">
+            <button onclick="shuffleString()">Перемешать строку</button>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -267,6 +273,17 @@
         function generateRandomString() {
             const randomString = Math.random().toString(36).substring(2, 10);
             document.getElementById('randomStringInput').value = randomString;
+        }
+
+        // Задание 20
+        function shuffleString() {
+            const inputField = document.getElementById('shuffleInput');
+            const str = inputField.value.split('');
+            for (let i = str.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [str[i], str[j]] = [str[j], str[i]];
+            }
+            inputField.value = str.join('');
         }
         </script>
     </body>
