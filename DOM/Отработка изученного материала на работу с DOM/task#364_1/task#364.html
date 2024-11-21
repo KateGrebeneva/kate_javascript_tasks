@@ -104,6 +104,13 @@
             <p id="output15"></p>
         </div>
 
+        <h2>Task #364 №16</h2>
+        <div>
+            <input id="input16" type="number" value="0">
+            <button onclick="increment()">+1</button>
+            <button onclick="decrement()">-1</button>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -212,6 +219,17 @@
             const daysOfWeek = ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'];
             document.getElementById('output15').innerText = daysOfWeek[date.getDay()];
         });
+
+        // Задание 16
+        function increment() {
+            const input = document.getElementById('input16');
+            input.value = Math.max(0, parseInt(input.value) + 1);
+        }
+        
+        function decrement() { 
+            const input = document.getElementById('input16');
+            input.value = Math.max(0, parseInt(input.value) - 1);
+        }
         </script>
     </body>
 </html>
