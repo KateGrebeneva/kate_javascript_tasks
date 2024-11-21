@@ -122,6 +122,12 @@
         <div class="text-div">Это длинный текст, который мы обрежем.</div>
         <div class="text-div">Еще один текст для обрезки.</div>
 
+        <h2>Task #364 №19</h2>
+        <div>
+            <input id="randomStringInput" type="text">
+            <button onclick="generateRandomString()">Сгенерировать строку</button>
+        </div>
+    
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -256,6 +262,12 @@
         document.querySelectorAll('.text-div').forEach(div => {
             div.innerText = div.innerText.substring(0, 10) + '...';
         });
+
+        // Задание 19
+        function generateRandomString() {
+            const randomString = Math.random().toString(36).substring(2, 10);
+            document.getElementById('randomStringInput').value = randomString;
+        }
         </script>
     </body>
 </html>
