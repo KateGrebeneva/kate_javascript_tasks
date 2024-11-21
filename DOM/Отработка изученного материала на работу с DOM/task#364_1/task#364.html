@@ -111,6 +111,13 @@
             <button onclick="decrement()">-1</button>
         </div>
 
+        <h2>Task #364 №17</h2>
+        <div>
+            <p class="clickable">Кликни меня!</p>
+            <p class="clickable">Кликни меня тоже!</p>
+            <input id="clickCountInput" type="text" value="0">
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -230,6 +237,16 @@
             const input = document.getElementById('input16');
             input.value = Math.max(0, parseInt(input.value) - 1);
         }
+
+        // Задание 17
+        let clickCount = 0;
+        const clickableElements = document.querySelectorAll('.clickable');
+        clickableElements.forEach(element => {
+            element.addEventListener('click', function() {
+                clickCount++;
+                document.getElementById('clickCountInput').value = clickCount;
+            });
+        });
         </script>
     </body>
 </html>
