@@ -148,6 +148,15 @@
             <p id="factorialOutput"></p>
         </div>
 
+        <h2>Task #364 №23</h2>
+        <div>
+            <input id="aInput" type="number" placeholder="Коэффициент a">
+            <input id="bInput" type="number" placeholder="Коэффициент b">
+            <input id="cInput" type="number" placeholder="Коэффициент c">
+            <button onclick="calculateRoots()">Найти корни</button>
+            <p id="rootsOutput"></p>
+        </div>
+
         <script>
         // Задание 1
         document.getElementById('input1').addEventListener('blur', function() {
@@ -315,6 +324,26 @@
                 factorial *= i;
             }
             document.getElementById('factorialOutput').innerText = `Факториал: ${factorial}`;
+        }
+
+        // Задание 23
+        function calculateRoots() {
+            const a = parseFloat(document.getElementById('aInput').value);
+            const b = parseFloat(document.getElementById('bInput').value);
+            const c = parseFloat(document.getElementById('cInput').value);
+   
+            const discriminant = b * b - 4 * a * c;
+
+            if (discriminant > 0) {
+                const root1 = (-b + Math.sqrt(discriminant)) / (2 * a);
+                const root2 = (-b - Math.sqrt(discriminant)) / (2 * a);
+                document.getElementById('rootsOutput').innerText = `Корни: ${root1}, ${root2}`;
+            } else if (discriminant === 0) {
+                const root = -b / (2 * a);
+                document.getElementById('rootsOutput').innerText = `Корень: ${root}`;
+            } else {
+                document.getElementById('rootsOutput').innerText = 'Корней нет';
+            }
         }
         </script>
     </body>
