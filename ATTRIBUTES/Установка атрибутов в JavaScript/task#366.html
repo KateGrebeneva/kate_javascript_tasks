@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #366 №1</h2>
+        <input id="elem1">
+        <button onclick="setValue()">Установить value в 'text'</button>
+        <div class="result" id="result1"></div>
+    
+        <h2>Task #366  №2</h2>
+        <input id="elem2">
+        <button onclick="setClass()">Установить class в 'valid'</button>
+        <div class="result" id="result2"></div>
+    
+        <script>
+            function setValue() {
+                const elem = document.getElementById('elem1');
+                elem.setAttribute('value', 'text');
+                document.getElementById('result1').innerText = 'Атрибут value установлен в: ' + elem.getAttribute('value');
+            }
+    
+            function setClass() {
+                const elem = document.getElementById('elem2');
+                elem.setAttribute('class', 'valid');
+                document.getElementById('result2').innerText = 'Атрибут class установлен в: ' + elem.getAttribute('class');
+            }
+        </script>
+    </body>
+</html>
