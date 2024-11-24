@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #365 №1 </h2>
+        <input id="elem1" value="text">
+        <button onclick="getValue()">Получить значение атрибута value</button>
+        <div class="result" id="result1"></div>
+        
+        <h2> Task #365 №2 </h2> 
+        <input id="elem2" class="www zzz">
+        <button onclick="getClass()">Получить значение атрибута class</button>
+        <div class="result" id="result2"></div>
+        
+        <script>
+        function getValue() {
+            const elem = document.getElementById('elem1');
+            const value = elem.getAttribute('value');
+            document.getElementById('result1').innerText = 'Значение атрибута value: ' + value;
+        }
+    
+        function getClass() {
+            const elem = document.getElementById('elem2');
+            const classValue = elem.getAttribute('class');
+            document.getElementById('result2').innerText = 'Значение атрибута class: ' + classValue;
+        }  
+        </script>
+    </body>
+</html>
