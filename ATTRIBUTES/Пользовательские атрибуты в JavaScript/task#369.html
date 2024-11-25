@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #369 №1</h2> 
+        <div id="elem" data-text="str">text</div>
+    
+        <h2>Task #369 №2</h2>
+        <div data-num="1">text</div>
+        <div data-num="2">text</div>
+        <div data-num="3">text</div>
+        <div data-num="4">text</div>
+        <div data-num="5">text</div>
+    
+        <h2>Task #369 №3</h2>
+        <button id="clickButton">Кликни меня!</button>
+        <button id="showClicks">Показать количество кликов</button>
+    
+        <h2>Task #369 №4</h2>
+        <input id="lengthInput" data-length="5" placeholder="Введите текст...">
+    
+        <h2>Task #369 №5</h2>
+        <input id="rangeInput" data-min="5" data-max="10" placeholder="Введите текст...">
+        <script>
+            // Задание 1
+            document.getElementById('elem').addEventListener('click', function() {
+                this.textContent += this.dataset.text;
+            });
+    
+            // Задание 2
+            const divs = document.querySelectorAll('div[data-num]');
+            divs.forEach(div => {
+                div.addEventListener('click', function() {
+                    this.textContent += this.dataset.num;
+                });
+            });
+    
+            // Задание 3
+            let clickCount = 0;
+            document.getElementById('clickButton').addEventListener('click', function() {
+                clickCount++;
+                this.dataset.clicks = clickCount; // Сохраняем количество кликов
+            });
+    
+            document.getElementById('showClicks').addEventListener('click', function() {
+                alert('Количество кликов: ' + document.getElementById('clickButton').dataset.clicks);
+            });
+    
+            // Задание 4
+            document.getElementById('lengthInput').addEventListener('blur', function() {
+                const length = this.dataset.length;
+                if (this.value.length !== Number(length)) {
+                    alert('Должно быть ' + length + ' символов!');
+                }
+            });
+    
+            // Задание 5
+            document.getElementById('rangeInput').addEventListener('blur', function() {
+                const min = Number(this.dataset.min);
+                const max = Number(this.dataset.max);
+                if (this.value.length < min || this.value.length > max) {
+                    alert('Количество символов должно быть от ' + min + ' до ' + max + '!');
+                }
+            });
+        </script>
+    </body>
+</html>
