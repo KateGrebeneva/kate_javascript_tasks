@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #372 №1-2</h2>
+        <p id="elem" class="www ggg zzz">www ggg zzz</p>
+
+        <div id="output"></div>
+    
+        <script>
+            // Задание 1: Узнаем количество классов
+            let elem = document.querySelector('#elem');
+            let length = elem.classList.length;
+    
+            // Выводим результат
+            let outputDiv = document.getElementById('output');
+            outputDiv.innerHTML += "<p>Количество классов элемента: <span class='result'>" + length + "</span></p>";
+    
+            // Задание 2: Перебираем классы
+            let classNames = elem.classList;
+    
+            outputDiv.innerHTML += "<p>Классы элемента:</p>";
+            for (let className of classNames) {
+                outputDiv.innerHTML += "<p class='result'>" + className + "</p>";
+            }
+        </script>
+    </body>
+</html>
