@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #371 №1</h2>
+        <p>If I could wish for one thing</p>
+        <p>I'd take the smile that you bring</p>
+        <p>Wherever you go in this world I'll come along</p>
+        <p>Together we dream the same dream</p>
+    
+        <script>
+            // Получаем все абзацы на странице
+            let paragraphs = document.querySelectorAll('p');
+    
+            // Перебираем их и устанавливаем атрибут data-num
+            paragraphs.forEach((paragraph, index) => {
+                paragraph.setAttribute('data-num', index + 1);
+            });
+    
+            // Проверяем установленные атрибуты
+            paragraphs.forEach(paragraph => {
+                console.log(paragraph.getAttribute('data-num'));
+            });
+        </script>
+    </body>
+</html>
