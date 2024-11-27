@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+             body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2; /* Светлый розовый фон */
+            color: #d5006d; /* Темный розовый цвет текста */
+            padding: 50px;
+            }
+            ul {
+                list-style-type: none; /* Убираем маркеры списка */
+                padding: 0;
+            }
+            li {
+                margin: 5px; /* Отступы между элементами списка */
+                padding: 10px;
+                background-color: #ffcccb; /* Светло-розовый фон для элементов списка */
+                border: 1px solid #ff69b4; /* Розовая граница */
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #d5006d; /* Розовый цвет кнопки */
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #a0004d; /* Темнее при наведении */
+            }
+        </style>
+	</head>
+    <body>
+        <h2>Task #379 №1</h2>
+        <ul id="myList">
+            <li>Pinky Pie</li>
+            <li>Flattershy</li>
+            <li>Rarity</li>
+        </ul>
+        <button id="floatButton">Добавить float!</button>
+    
+        <script>
+            let floatButton = document.querySelector('#floatButton');
+            let listItems = document.querySelectorAll('#myList li');
+    
+            // Добавление свойства float к элементам списка по клику на кнопку
+            floatButton.addEventListener('click', function() {
+                listItems.forEach(function(item) {
+                    item.style.cssFloat = 'left'; // Устанавливаем свойство float для каждого элемента
+                });
+            });
+        </script>
+    </body>
+</html>
