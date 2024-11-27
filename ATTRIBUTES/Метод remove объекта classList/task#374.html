@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #374 №1</h2>
+        <p id="elem" class="www ggg zzz">Этот элемент имеет классы www, ggg и zzz.</p>
+        <button id="removeClassesButton">Удалить классы www и zzz</button>
+    
+        <script>
+            let elem = document.querySelector('#elem');
+            let removeClassesButton = document.querySelector('#removeClassesButton');
+    
+            // Удаление классов www и zzz
+            removeClassesButton.addEventListener('click', function() {
+                elem.classList.remove('www', 'zzz');
+                alert('Классы www и zzz удалены!');
+            });
+        </script>
+    </body>
+</html>
