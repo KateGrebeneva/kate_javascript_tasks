@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #375 №1</h2>
+        <p id="elem" class="www ggg zzz">Этот элемент имеет классы www, ggg и zzz.</p>
+        <button id="checkClassButton">Проверить наличие класса ggg</button>
+    
+        <script>
+            let elem = document.querySelector('#elem');
+            let checkClassButton = document.querySelector('#checkClassButton');
+    
+            // Проверка наличия класса ggg
+            checkClassButton.addEventListener('click', function() {
+                let contains = elem.classList.contains('ggg');
+                alert('Класс ggg ' + (contains ? 'присутствует' : 'отсутствует') + ' у элемента.');
+                console.log(contains); // Вывод результата в консоль
+            });
+        </script>
+    </body>
+</html>
