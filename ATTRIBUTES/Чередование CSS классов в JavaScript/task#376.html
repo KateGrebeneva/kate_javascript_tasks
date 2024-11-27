@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #376 №1</h2>
+        <p id="elem" class="ggg zzz">Этот элемент имеет классы ggg и zzz.</p>
+        <button id="toggleClassButton">Переключить класс www</button>
+    
+        <script>
+            let elem = document.querySelector('#elem');
+            let toggleClassButton = document.querySelector('#toggleClassButton');
+    
+            // Переключение класса www
+            toggleClassButton.addEventListener('click', function() {
+                elem.classList.toggle('www');
+                alert('Класс www ' + (elem.classList.contains('www') ? 'добавлен' : 'удален') + ' у элемента.');
+                console.log(elem.classList); // Вывод текущих классов в консоль
+            });
+        </script>
+    </body>
+</html>
