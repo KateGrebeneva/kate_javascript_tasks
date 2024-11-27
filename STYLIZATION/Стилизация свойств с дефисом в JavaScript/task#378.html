@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #ffe6f2; 
+                color: #d5006d; 
+                text-align: center;
+                padding: 50px;
+            }
+            #myDiv {
+                margin: 20px auto;
+                padding: 10px;
+                border: 2px solid transparent; 
+                transition: all 0.3s; 
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #ff1493; 
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #c71585; 
+            }
+        </style>
+	</head>
+    <body>
+        <h2>Task #378 №1</h2>
+        <div id="myDiv">Madly in love with cats!</div>
+        <button id="styleButton">Изменить стиль!</button>
+    
+        <script>
+            let myDiv = document.querySelector('#myDiv');
+            let styleButton = document.querySelector('#styleButton');
+    
+            // Изменение стиля дива по клику на кнопку
+            styleButton.addEventListener('click', function() {
+                myDiv.style.fontSize = '20px'; 
+                myDiv.style.borderTop = '2px solid #ff69b4'; 
+                myDiv.style.backgroundColor = '#ffcccb';
+            });
+        </script>
+    </body>
+</html>
