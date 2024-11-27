@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <link rel="stylesheet" href="style.css">
+	</head>
+    <body>
+        <h2>Task #373 №1</h2>
+        <p id="elem" class="www ggg zzz">Этот элемент имеет классы www, ggg и zzz.</p>
+        <button id="addClassButton">Добавить класс xxx</button>
+    
+        <script>
+            let elem = document.querySelector('#elem');
+            let button = document.querySelector('#addClassButton');
+    
+            button.addEventListener('click', function() {
+                elem.classList.add('xxx');
+                alert('Класс xxx добавлен!');
+            });
+        </script>
+    
+    </body>
+</html>
