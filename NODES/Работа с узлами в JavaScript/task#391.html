@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6f2; /* светлый розовый фон */
+            color: #333; /* темный текст для контраста */
+        }
+        
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffccf2; /* розоватый цвет контейнера */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h2 {
+            color: #d5006d; /* яркий розовый цвет заголовка */
+        }
+        
+        button {
+            background-color: #ff66b2; /* кнопка розового цвета */
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #ff3385; /* более темный оттенок при наведении */
+        }
+        
+        p {
+            background-color: #fff; /* белый фон для результата */
+            padding: 10px;
+            border-radius: 5px;
+        }
+        </style>
+	</head>
+    <body>
+        <div class="container">
+            <h2>Task 391 №1: Разница между lastChild и lastElementChild</h2>
+            <div id="elem">
+                <!-- Сегодня 29.11.24 -->
+                Привет!
+                <span>Hi!</span>
+            </div>
+            <button onclick="showLastChildDifference()">Показать разницу</button>
+            <p id="lastChildResult"></p>
+    
+            <h2>Task 391 №2: Разница между nextSibling и nextElementSibling</h2>
+            <div id="nextSiblingDemo">
+                <p>Dogs</p>
+                <p>Rabbits</p>
+            </div>
+            <button onclick="showNextSiblingDifference()">Показать разницу</button>
+            <p id="nextSiblingResult"></p>
+    
+            <h2>Task 391 №3: Разница между previousSibling и previousElementSibling</h2>
+            <div id="previousSiblingDemo">
+                <p>Roses</p>
+                <p>Tulips</p>
+            </div>
+            <button onclick="showPreviousSiblingDifference()">Показать разницу</button>
+            <p id="previousSiblingResult"></p>
+        </div>
+    
+        <script>
+            // Разница между lastChild и lastElementChild
+            function showLastChildDifference() {
+                const elem = document.querySelector('#elem');
+                const lastChild = elem.lastChild;
+                const lastElementChild = elem.lastElementChild;
+    
+                document.getElementById('lastChildResult').innerText = 
+                    `lastChild: ${lastChild.nodeType === Node.COMMENT_NODE ? 'Комментарий' : lastChild.nodeName}, ` +
+                    `lastElementChild: ${lastElementChild.nodeName}`;
+            }
+
+            // Разница между nextSibling и nextElementSibling
+            function showNextSiblingDifference() {
+                const elem = document.querySelector('#nextSiblingDemo p:first-child');
+                const nextSibling = elem.nextSibling;
+                const nextElementSibling = elem.nextElementSibling;
+    
+                document.getElementById('nextSiblingResult').innerText = 
+                    `nextSibling: ${nextSibling.nodeType === Node.TEXT_NODE ? 'Текст' : nextSibling.nodeName}, ` +
+                    `nextElementSibling: ${nextElementSibling.nodeName}`;
+            }
+    
+            // Разница между previousSibling и previousElementSibling
+            function showPreviousSiblingDifference() {
+                const elem = document.querySelector('#previousSiblingDemo p:last-child');
+                const previousSibling = elem.previousSibling;
+                const previousElementSibling = elem.previousElementSibling;
+    
+                document.getElementById('previousSiblingResult').innerText = 
+                    `previousSibling: ${previousSibling.nodeType === Node.TEXT_NODE ? 'Текст' : previousSibling.nodeName}, ` +
+                    `previousElementSibling: ${previousElementSibling.nodeName}`;
+            }
+        </script>
+    </body>
+    </body>
+</html>
