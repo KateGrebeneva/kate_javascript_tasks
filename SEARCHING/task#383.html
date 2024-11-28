@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+            body {
+                background-color: #ffd2ea; /* Светлый фон в розовых оттенках */
+                font-family: Arial, sans-serif;
+                color: #d5006d; /* Темный розовый цвет текста */
+            }
+    
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                border: 2px solid #d5006d; /* Темно-розовая рамка */
+                border-radius: 10px;
+                background-color: #f8e1e1; /* Более светлый фон для контейнера */
+                text-align: center;
+            }
+    
+            ul {
+                list-style-type: none; 
+                padding: 0;
+            }
+    
+            li {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+    
+            .red {
+                color: red; /* Красный цвет текста */
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #d5006d; /* Розовый цвет кнопки */
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #a0004d; /* Темнее при наведении */
+            }
+        </style>
+	</head>
+    <body>
+        <div class="container">
+            <h2>Стихотворение "Берегите матерей"</h2>
+            <ul id="elem">
+                <li>Слово это сроду не обманет,</li>
+                <li>В нем сокрыто жизни существо.</li>
+                <li>В нем — исток всего. Ему конца нет.</li>
+                <li>Встаньте!..Я произношу его:</li>
+                <li>«Мама!»</li>
+            </ul>
+            <h2>Task #383 №1</h2> 
+            <button id="firstChildButton">Сделать первый элемент красным</button>
+            <h2>Task #383 №2</h2> 
+            <button id="lastChildButton">Сделать последний элемент красным</button>
+            <h2>Task #383 №3</h2> 
+            <button id="addTextButton">Добавить '!' ко всем элементам</button>
+        </div>
+    
+        <script>
+            const elem = document.getElementById('elem');
+    
+            // Задание 1: Сделать текст первого потомка красным
+            document.getElementById('firstChildButton').addEventListener('click', function() {
+                const firstChild = elem.firstElementChild;
+                if (firstChild) {
+                    firstChild.classList.add('red');
+                }
+            });
+    
+            // Задание 2: Сделать текст последнего потомка красным
+            document.getElementById('lastChildButton').addEventListener('click', function() {
+                const lastChild = elem.lastElementChild;
+                if (lastChild) {
+                    lastChild.classList.add('red');
+                }
+            });
+    
+            // Задание 3: Добавить '!' ко всем потомкам
+            document.getElementById('addTextButton').addEventListener('click', function() {
+                const children = elem.children;
+                for (let i = 0; i < children.length; i++) {
+                    children[i].textContent += '!';
+                }
+            });
+        </script>
+    </body>
+</html>
