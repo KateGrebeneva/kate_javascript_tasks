@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+            body {
+                background-color: #ffd2ea; /* Светлый фон в розовых оттенках */
+                font-family: Arial, sans-serif;
+                color: #d5006d; /* Темный розовый цвет текста */
+            }
+    
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                border: 2px solid #d5006d; /* Темно-розовая рамка */
+                border-radius: 10px;
+                background-color: #f8e1e1; /* Более светлый фон для контейнера */
+                text-align: center;
+            }
+    
+            ul {
+                list-style-type: none; 
+                padding: 0;
+            }
+    
+            li {
+                font-size: 18px;
+                margin: 10px 0;
+            }
+    
+            .red {
+                color: red; /* Красный цвет текста */
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #d5006d; /* Розовый цвет кнопки */
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #a0004d; /* Темнее при наведении */
+            }
+        </style>
+	</head>
+    <body>
+        <div class="container">
+            <h2>Стихотворение "Я любить тебя буду, можно?"</h2>
+            <ul>
+                <li>Подойду я к обрыву крутому</li>
+                <li>Падать буду — Поймать успеешь?</li>
+                <li id="elem">Ну, а если уеду — Напишешь?</li>
+                <li>Только мне без тебя трудно!</li>
+                <li>Я хочу быть с тобою — Слышишь?</li>
+            </ul>
+            <button id="setBorderButton">Установить красную границу родителю</button>
+        </div>
+    
+        <script>
+            document.getElementById('setBorderButton').addEventListener('click', function() {
+                let elem = document.querySelector('#elem');
+                let parent = elem.parentElement; // Получаем родительский элемент
+                parent.style.border = '2px solid red'; // Устанавливаем красную границу
+            });
+        </script>
+    </body>
+</html>
