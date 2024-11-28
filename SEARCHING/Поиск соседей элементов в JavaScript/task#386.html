@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+            body {
+                background-color: #ffd2ea; /* Светлый фон в розовых оттенках */
+                font-family: Arial, sans-serif;
+                color: #d5006d; /* Темный розовый цвет текста */
+            }
+            .container {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                border: 2px solid #d5006d; /* Темно-розовая рамка */
+                border-radius: 10px;
+                background-color: #f8e1e1; /* Более светлый фон для контейнера */
+                text-align: center;
+            }
+            ul {
+                list-style-type: none; /* Убираем маркеры списка */
+                padding: 0;
+            }
+            
+            li {
+                background-color: #ffccf2; /* Розовый фон для элементов списка */
+                margin: 5px;
+                padding: 10px;
+                border-radius: 5px; /* Закругленные углы */
+            }
+            button {
+                padding: 10px 20px;
+                background-color: #d5006d; /* Розовый цвет кнопки */
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #a0004d; /* Темнее при наведении */
+            }
+        </style>
+	</head>
+    <body>
+        <div class="container">
+                <h2>Поиск соседей элементов в JavaScript</h2> 
+                <ul id="list1">
+                    <li>Крош</li>
+                    <li>Нюша</li>
+                    <li id="elem">Бараш</li>
+                    <li>Кар-Карыч</li>
+                    <li>Ёжик</li>
+                </ul>
+
+                <h2>Task 386 №1</h2> 
+                <button id="task1">Добавить соседу сверху в конец "!"</button>
+                <h2>Task 386 №2</h2> 
+                <button id="task2">Добавить соседу снизу в конец "!</button>
+                <h2>Task 386 №3</h2> 
+                <button id="task3">Добавить следующему элементу за соседним в коне "!"</button>
+                <h2>Task 386 №4</h2> 
+                <button id="task4">Поменять местами текст</button>
+            </div>
+            <script>
+            // Задание 1
+                document.getElementById('task1').addEventListener('click', function() {
+                    let elem = document.querySelector('#elem');
+                    let previousSibling = elem.previousElementSibling;
+                    if (previousSibling) {
+                        previousSibling.textContent += '!';
+                    }
+                });
+        
+                // Задание 2
+                document.getElementById('task2').addEventListener('click', function() {
+                    let elem = document.querySelector('#elem');
+                    let nextSibling = elem.nextElementSibling;
+                    if (nextSibling) {
+                        nextSibling.textContent += '!';
+                    }
+                });
+        
+                // Задание 3
+                document.getElementById('task3').addEventListener('click', function() {
+                    let elem = document.querySelector('#elem');
+                    let nextSibling = elem.nextElementSibling;
+                    if (nextSibling) {
+                        let nextNextSibling = nextSibling.nextElementSibling;
+                        if (nextNextSibling) {
+                            nextNextSibling.textContent += '!';
+                        }
+                    }
+                });
+        
+                // Задание 4
+                document.getElementById('task4').addEventListener('click', function() {
+                    let elem = document.querySelector('#elem');
+                    let previousSibling = elem.previousElementSibling;
+                    let nextSibling = elem.nextElementSibling;
+        
+                    if (previousSibling && nextSibling) {
+                        // Меняем местами текст
+                        let tempText = previousSibling.textContent;
+                        previousSibling.textContent = nextSibling.textContent;
+                        nextSibling.textContent = tempText;
+                    }
+                });
+            </script>
+    </body>
+</html>
