@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffccf2; /* Светлый фон */
+            color: #d5006d; /* Темный розовый цвет текста */
+            padding: 20px;
+        }
+        
+        #elem {
+            background-color: #ffeef8; /* Розовый фон для дива */
+            border: 2px solid #ff99cc; /* Розовая рамка */
+            border-radius: 5px; /* Закругленные углы */
+            padding: 10px;
+            margin: 20px 0;
+            font-size: 18px; /* Размер шрифта */
+        }
+        
+        b {
+            color: #ff0026; /* Цвет текста для тега <b> */
+        }
+        
+        </style>
+	</head>
+    <body>
+        <h2>Task 393 №1</h2>
+        <div id="elem">txt<b>tag</b><!--com-->txt<b>tag</b><!--com--></div>
+
+        <script>
+            // Получаем элемент по ID
+            const elem = document.getElementById('elem');
+        
+            // Перебираем узлы элемента циклом
+            for (let node of elem.childNodes) {
+                console.log(node.nodeName); // Выводим название узла в консоль
+            }
+        </script>
+            
+</html>
