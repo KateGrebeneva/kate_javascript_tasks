@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+            body {
+                background-color: #ffd2ea; /* Светлый фон в розовых оттенках */
+                font-family: Arial, sans-serif;
+                color: #d5006d; /* Темный розовый цвет текста */
+                text-align: center;
+            }
+            #parent {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                border: 2px solid #d5006d; /* Темно-розовая рамка */
+                border-radius: 10px;
+                background-color: #f8e1e1; /* Более светлый фон для контейнера */
+                text-align: center;
+            }
+            ul {
+                list-style-type: none; /* Убираем маркеры списка */
+                padding: 0;
+            }
+            
+            li {
+                background-color: #ffccf2; /* Розовый фон для элементов списка */
+                margin: 5px;
+                padding: 10px;
+                border-radius: 5px; /* Закругленные углы */
+            }
+        </style>
+	</head>
+    <body>
+        <h2>Task 388 №1</h2>
+        <div id="parent">
+            <p class="www">Героини папиных дочек:</p>
+            <p class="www">Маша</p>
+            <p class="www">Даша</p>
+            <p class="ggg">Женя</p>
+            <p class="ggg">Галина Сергевна</p>
+            <p class="ggg">Пуговка</p>
+        </div>
+    
+        <script>
+            // Получаем ссылку на родительский элемент
+            let parent = document.querySelector('#parent');
+    
+            // Находим элементы с классом 'www' внутри родителя
+            let elems1 = parent.querySelectorAll('.www');
+    
+            // Находим элементы с классом 'ggg' внутри родителя
+            let elems2 = parent.querySelectorAll('.ggg');
+    
+            // Выводим результаты в консоль
+            console.log('Элементы с классом www:', elems1);
+            console.log('Элементы с классом ggg:', elems2);
+        </script>
+    </body>
+    </body>
+</html>
