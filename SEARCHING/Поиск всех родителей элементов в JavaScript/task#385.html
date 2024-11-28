@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+            body {
+                background-color: #ffd2ea; /* Светлый фон в розовых оттенках */
+                font-family: Arial, sans-serif;
+                color: #d5006d; /* Темный розовый цвет текста */
+            }
+    
+            section {
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 20px;
+                border: 2px solid #d5006d; /* Темно-розовая рамка */
+                border-radius: 10px;
+                background-color: #f8e1e1; /* Более светлый фон для контейнера */
+                text-align: center;
+            }
+
+            button {
+                padding: 10px 20px;
+                background-color: #d5006d; /* Розовый цвет кнопки */
+                border: none;
+                color: white;
+                cursor: pointer;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+            button:hover {
+                background-color: #a0004d; /* Темнее при наведении */
+            }
+        </style>
+	</head>
+    <body>
+        <div class="container">
+            <section>
+                <h2>Task 385 №1</h2>
+                <header>
+                    <div>
+                        <p>
+                            <span id="elem1">Элемент 1</span>
+                        </p>
+                    </div>
+                </header>
+                <button id="findDivButton1">Найти ближайший div</button>
+                <p id="result1"></p>
+            </section>
+        
+            <section>
+                <h2>Task 385 №2</h2>
+                <header>
+                    <div class="www">
+                        <p class="www">
+                            <span id="elem2">Элемент 2</span>
+                        </p>
+                    </div>
+                </header>
+                <button id="findClassButton2">Найти ближайший элемент с классом www</button>
+                <p id="result2"></p>
+            </section>
+        
+            <script>
+                // Задание 1
+                document.getElementById('findDivButton1').addEventListener('click', function() {
+                    let elem = document.querySelector('#elem1');
+                    let parent = elem.closest('div'); // Ищем ближайший родительский div
+                    document.getElementById('result1').textContent = parent ? parent.outerHTML : 'Родительский div не найден';
+                });
+        
+                // Задание 2
+                document.getElementById('findClassButton2').addEventListener('click', function() {
+                    let elem = document.querySelector('#elem2');
+                    let parent = elem.closest('.www'); // Ищем ближайший родительский элемент с классом www
+                    document.getElementById('result2').textContent = parent ? parent.outerHTML : 'Родитель с классом www не найден';
+                });
+            </script>
+    </body>
+</html>
