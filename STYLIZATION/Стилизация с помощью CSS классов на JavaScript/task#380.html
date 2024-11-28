@@ -45,15 +45,15 @@
         let paragraph = document.getElementById('myParagraph');
 
         document.getElementById('strikeButton').addEventListener('click', function() {
-            paragraph.classList.toggle('strike'); // Переключение класса для перечеркивания
+            paragraph.classList.add('strike'); // Переключение класса для перечеркивания
         });
             
         document.getElementById('boldButton').addEventListener('click', function() {
-            paragraph.classList.toggle('bold'); // Переключение класса для жирного текста
+            paragraph.classList.add('bold'); // Переключение класса для жирного текста
         });
             
         document.getElementById('redButton').addEventListener('click', function() {
-            paragraph.classList.toggle('red'); // Переключение класса для красного цвета
+            paragraph.classList.add('red'); // Переключение класса для красного цвета
         });    
         </script>
     </body>
