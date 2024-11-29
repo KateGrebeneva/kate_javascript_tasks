@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style> 
+        body {
+            background-color: #ffccf2; 
+            color: #d5006d;
+            font-family: Arial, sans-serif;}
+            input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #ff66b3; /* Цвет кнопок */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #ff3399; /* Цвет кнопки при наведении */
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffccf2; /* Более темный розовый для вывода */
+            border: 1px solid #ff99cc; /* Розовая рамка для вывода */
+            border-radius: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Task 400 №1</h2>
+        <h2>Выберите персонажа!</h2>
+        <label>
+            <input type="radio" name="character" value="Совунья" checked>
+            Совунья
+        </label><br>
+    
+        <label>
+            <input type="radio" name="character" value="Крош">
+            Крош
+        </label><br>
+    
+        <label>
+            <input type="radio" name="character" value="Ежик">
+            Ежик
+        </label><br>
+    
+        <button id="button">Вывести выбранного персонажа</button>
+    
+        <p id="output"></p>
+
+        <script>
+        let radios = document.querySelectorAll('input[type="radio"]');
+            let button = document.querySelector('#button');
+            let output = document.querySelector('#output');
+            
+            button.addEventListener('click', function() {
+              for (let radio of radios) {
+                if (radio.checked) {
+                  output.textContent = `Выбранный персонаж: ${radio.value}`;
+                  break; // Прерываем цикл после нахождения выбранной радиокнопки
+                }
+              }
+            });
+        </script>
+    </body>        
+</html>
