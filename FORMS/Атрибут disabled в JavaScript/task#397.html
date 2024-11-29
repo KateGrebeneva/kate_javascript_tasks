@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>  
+        <style>
+            body {
+                background-color: #ffccf2; 
+                color: #d5006d;
+                font-family: Arial, sans-serif;
+            }
+
+            input {
+                border: 2px solid #ff99cc; /* Розовая рамка для input */
+                border-radius: 5px;
+                padding: 10px;
+                font-size: 16px;
+                margin-bottom: 10px;
+            }
+    
+            button {
+                background-color: #ff66b3; /* Цвет кнопок */
+                color: white;
+                border: none;
+                border-radius: 5px;
+                padding: 10px 15px;
+                cursor: pointer;
+                font-size: 16px;
+            }
+    
+            button:hover {
+                background-color: #ff3399; /* Цвет кнопки при наведении */
+            }
+    
+            .output {
+                margin-top: 20px;
+                padding: 10px;
+                background-color: #ffccf2; /* Более темный розовый для вывода */
+                border: 1px solid #ff99cc; /* Розовая рамка для вывода */
+                border-radius: 5px;
+            }
+        </style>
+	</head>
+    <body>
+        <h2>Task 397 №1</h2>
+        <input id="input1" type="text" placeholder="Заблокируйте меня!">
+        <button id="blockButton1">Заблокировать</button>
+
+        <h2>Task 397 №2</h2>
+        <input id="input2" type="text" placeholder="Я могу быть заблокирован!">
+        <button id="blockButton2">Заблокировать</button>
+        <button id="unblockButton2">Разблокировать</button>
+        
+        <h2>Task 397 №3</h2>
+        <input id="input3" type="text" placeholder="Узнайте мой статус!">
+        <button id="statusButton">Проверить статус</button>
+        <div class="output" id="statusOutput"></div>
+        
+        <script>
+            // Задание 1
+            const blockButton1 = document.getElementById('blockButton1');
+            const input1 = document.getElementById('input1');
+        
+            blockButton1.addEventListener('click', () => {
+                input1.disabled = true; // Блокируем инпут
+            });
+        
+            // Задание 2
+            const blockButton2 = document.getElementById('blockButton2');
+            const unblockButton2 = document.getElementById('unblockButton2');
+            const input2 = document.getElementById('input2');
+        
+            blockButton2.addEventListener('click', () => {
+                input2.disabled = true; // Блокируем инпут
+            });
+        
+            unblockButton2.addEventListener('click', () => {
+                input2.disabled = false; // Разблокируем инпут
+            });
+        
+            // Задание 3
+            const statusButton = document.getElementById('statusButton');
+            const input3 = document.getElementById('input3');
+            const statusOutput = document.getElementById('statusOutput');
+        
+            statusButton.addEventListener('click', () => {
+                if (input3.disabled) {
+                    statusOutput.textContent = 'Инпут заблокирован.';
+                } else {
+                    statusOutput.textContent = 'Инпут разблокирован.';
+                }
+            });
+        </script>
+    </body>        
+</html>
