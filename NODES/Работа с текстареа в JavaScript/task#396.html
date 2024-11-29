@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+        body {
+            background-color: #ffe6f2; /* Светлый розовый фон */
+            color: #d5006d; /* Темный розовый цвет текста */
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        textarea {
+            border: 2px solid #ff99cc; /* Розовая рамка для textarea */
+            border-radius: 5px;
+            padding: 10px;
+            font-size: 16px;
+            width: 60%;
+        }
+        p {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffccf2; /* Более темный розовый для абзаца */
+            border: 1px solid #ff99cc; /* Розовая рамка для абзаца */
+            border-radius: 5px;
+        }        
+        </style>
+	</head>
+    <body>
+        <h2>Task 396 №1</h2>
+        <h2>Скорее кликни текст ниже!</h2>
+        <textarea id="elem" rows="5" cols="30">Ёжик — один из персонажей мультсериала "Смешарики". Он добрый и отзывчивый, всегда готов помочь своим друзьям.</textarea>
+        <p id="output">Здесь будет текст из textarea.</p>
+        
+        <script>
+            // Получаем элементы textarea и абзац
+            const textarea = document.getElementById('elem');
+            const outputParagraph = document.getElementById('output');
+        
+            // Обработчик события потери фокуса
+            textarea.addEventListener('blur', function() {
+                // Записываем текст из textarea в абзац
+                outputParagraph.textContent = textarea.value;
+            });
+        </script>
+    </body>        
+</html>
