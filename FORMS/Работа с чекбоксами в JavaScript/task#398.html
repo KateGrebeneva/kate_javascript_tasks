@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style> 
+        body {
+            background-color: #ffccf2; 
+            color: #d5006d;
+            font-family: Arial, sans-serif;}
+            input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #ff66b3; /* Цвет кнопок */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #ff3399; /* Цвет кнопки при наведении */
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffccf2; /* Более темный розовый для вывода */
+            border: 1px solid #ff99cc; /* Розовая рамка для вывода */
+            border-radius: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Task 398 №1</h2>
+        <input type="checkbox" id="checkbox1">
+        <button id="checkButton">Отметить</button>
+        <button id="uncheckButton">Снять отметку</button>
+        
+        <h2>Task 398 №2</h2>
+        <input type="checkbox" id="checkbox2">
+        <button id="greetButton">Проверить состояние</button>
+        <p class="output" id="greetOutput"></p>
+        
+        <script>
+            // Задание 1
+            const checkButton = document.getElementById('checkButton');
+            const uncheckButton = document.getElementById('uncheckButton');
+            const checkbox1 = document.getElementById('checkbox1');
+        
+            checkButton.addEventListener('click', () => {
+                checkbox1.checked = true; // Устанавливаем чекбокс в отмеченное состояние
+            });
+        
+            uncheckButton.addEventListener('click', () => {
+                checkbox1.checked = false; // Устанавливаем чекбокс в неотмеченное состояние
+            });
+        
+            // Задание 2
+            const greetButton = document.getElementById('greetButton');
+            const checkbox2 = document.getElementById('checkbox2');
+            const greetOutput = document.getElementById('greetOutput');
+        
+            greetButton.addEventListener('click', () => {
+                if (checkbox2.checked) {
+                    greetOutput.textContent = 'Привет'; // Если чекбокс отмечен
+                } else {
+                    greetOutput.textContent = 'Пока'; // Если чекбокс не отмечен
+                }
+            });
+        </script>
+    
+    
+    </body>        
+</html>
