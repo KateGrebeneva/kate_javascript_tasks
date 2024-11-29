@@ -27,37 +27,37 @@
         </style>
 	</head>
     <body>
-        <h2>Task 394 №1-4</h2>
+        <h2>Task 395 №1-4</h2>
         <div id="elem">txt<b>tag</b><!--com-->txt<b>tag</b><!--com--></div>
 
         <script>
             // Получаем элемент по ID
             const elem = document.getElementById('elem');
         
-            // Задание 1: Перебираем все узлы и выводим тексты всех узлов
-            console.log("Task 394 №1-Тексты всех узлов:");
+            // Задание 1: 
+            console.log("Task 395 №1-Тексты всех узлов:");
             for (let node of elem.childNodes) {
                 console.log(node.nodeValue);
             }
         
-            // Задание 2: Перебираем все узлы и выводим тексты комментариев и текстовых узлов
-            console.log("\nTask 394 №2-Тексты комментариев и текстовых узлов:");
+            // Задание 2: 
+            console.log("\nTask 395 №2-Тексты комментариев и текстовых узлов:");
             for (let node of elem.childNodes) {
                 if (node.nodeType === Node.TEXT_NODE || node.nodeType === Node.COMMENT_NODE) {
                     console.log(node.nodeValue);
                 }
             }
         
-            // Задание 3: Перебираем все узлы и выводим тексты текстовых узлов и элементов
-            console.log("\nTask 394 №3-Тексты текстовых узлов и элементов:");
+            // Задание 3: 
+            console.log("\nTask 395 №3-Тексты текстовых узлов и элементов:");
             for (let node of elem.childNodes) {
                 if (node.nodeType === Node.TEXT_NODE || node.nodeType === Node.ELEMENT_NODE) {
                     console.log(node.nodeValue);
                 }
             }
         
-            // Задание 4: Перебираем все узлы и добавляем их тип в конец
-            console.log("\nTask 394 №4-Узлы с типами:");
+            // Задание 4: 
+            console.log("\nTask 395 №4-Узлы с типами:");
             for (let node of elem.childNodes) {
                 let typeInfo =  `(${node.nodeType})`;
                 console.log(node.nodeValue + typeInfo);
