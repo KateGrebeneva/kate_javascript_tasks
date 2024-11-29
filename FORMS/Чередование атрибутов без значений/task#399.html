@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style> 
+        body {
+            background-color: #ffccf2; 
+            color: #d5006d;
+            font-family: Arial, sans-serif;}
+            input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        button {
+            background-color: #ff66b3; /* Цвет кнопок */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        button:hover {
+            background-color: #ff3399; /* Цвет кнопки при наведении */
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ffccf2; /* Более темный розовый для вывода */
+            border: 1px solid #ff99cc; /* Розовая рамка для вывода */
+            border-radius: 5px;
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Task 399 №1</h2>
+        <input id="elem" type="text" disabled>
+        <input id="button" type="submit" value="Переключить состояние">
+        
+        <h2>Task 399 №2</h2>
+        <input type="checkbox" id="checkbox">
+        <button id="toggleCheckbox">Переключить чекбокс</button>
+        
+        <script>
+            // Задание 1
+            // Принцип работы состоит в том,что мы переключаем состояние текстового поля (инпута) между заблокированным и разблокированным.
+            let elem = document.querySelector('#elem'); //получаем ссылку на инпут с id="elem"
+            let button = document.querySelector('#button'); //получаем ссылку на кнопку.
+        
+            button.addEventListener('click', function() {
+                elem.disabled = !elem.disabled; // Переключаем состояние инпута(если инпут заблокирован (true), то !elem.disabled станет false, и инпут будет разблокирован. И наоборот)
+            });
+        
+            // Задание 2
+            const checkbox = document.querySelector('#checkbox');
+            const toggleCheckboxButton = document.querySelector('#toggleCheckbox');
+        
+            toggleCheckboxButton.addEventListener('click', function() {
+                checkbox.checked = !checkbox.checked; // Переключаем состояние чекбокса
+            });
+        </script>
+    </body>        
+</html>
