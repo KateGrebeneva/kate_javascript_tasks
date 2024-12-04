@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8e1f4; /* Светлый розовый фон */
+            color: #d5006d;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        
+        button {
+            background-color: #d5006d; 
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #a2004d; 
+        }
+        
+        div {
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #d5006d; 
+        }
+        </style>
+    </head>
+    <body>
+        <h2>Task 404 №1</h2>
+        <textarea placeholder="Введите текст..."></textarea>
+        <div></div>
+    
+        <h2>Task 404 №2</h2>
+        <input type="checkbox" id="checkbox">
+        <div></div>
+        <button id="button">Кнопка</button>
+    
+        <h2>Task 404 №3</h2>
+        <input type="checkbox" id="checkbox3">
+        <button id="button3">Кнопка</button>
+    
+        <script>
+            // Задание 1
+            let textarea = document.querySelector('textarea');
+            let div1 = document.querySelector('div:nth-of-type(1)');
+    
+            textarea.addEventListener('blur', function() {
+                div1.textContent = textarea.value; // Исправлено на .value
+            });
+    
+            // Задание 2
+            let checkbox = document.querySelector('#checkbox');
+            let button = document.querySelector('#button');
+            let div2 = document.querySelector('div:nth-of-type(2)');
+    
+            button.addEventListener('click', function() {
+                if (checkbox.checked) {
+                    div2.textContent = '111'; // Исправлено на .textContent
+                } else {
+                    div2.textContent = '222'; // Исправлено на .textContent
+                }
+            });
+    
+            // Задание 3
+            let checkbox3 = document.querySelector('#checkbox3');
+            let button3 = document.querySelector('#button3');
+    
+            button3.addEventListener('click', function() {
+                if (checkbox3.checked) { // Исправлено на == для сравнения
+                    console.log('+++');
+                } else {
+                    console.log('---');
+                }
+            });
+        </script>
+    </body>        
+</html>
