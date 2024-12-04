@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>katushka</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f8e2e7;
+                padding: 20px;
+                color: #d5006d;
+                text-align: center;
+            }
+                
+            input {
+                padding: 10px;
+                border: 2px solid #d5006d;
+                 border-radius: 5px;
+                 margin-bottom: 10px;
+                 width: 40%;
+                 transition: border-color 0.3s;
+                }
+                
+            input:focus {
+                border-color: #ff69b4; /* Цвет границы при фокусе */
+            }
+    </style>
+    </head>
+    <body>
+        <h2>Task 403 №1</h2>
+        <input id="firstInput" type="text" placeholder="Введите 1-й символ...">
+        <input id="secondInput" type="text" placeholder="Введите 2-й символ...">
+        <input type="submit" id="button" value="Установить фокус на 1-й инпут">
+        
+        <script>
+            let firstInput = document.querySelector('#firstInput');
+            let secondInput = document.querySelector('#secondInput');
+            let button = document.querySelector('#button');
+        
+            // Обработчик события для первого инпута
+            firstInput.addEventListener('input', function() {
+                if (this.value.length >= 2) {
+                    secondInput.focus(); // Устанавливаем фокус на второй инпут
+                }
+            });
+        
+            // Обработчик события для второго инпута
+            secondInput.addEventListener('input', function() {
+                if (this.value.length >= 2) {
+                    this.blur(); // Убираем фокус со второго инпута
+                }
+            });
+        
+            // Обработчик нажатия кнопки (для демонстрации focus)
+            button.addEventListener('click', function() {
+                firstInput.focus(); // Устанавливаем фокус на первый инпут
+            });
+        </script>
+    </body>        
+</html>
